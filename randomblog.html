@@ -7,12 +7,10 @@ title: Random
 
 {% for post in posts %}
     <div class="post-preview">
-        <a href="{{ post.url | prepend: site.baseurl }}">
+        <a href="{{ post.url | prepend: absolute_url }}">
             <div class="row">
                 <div class="col-sm-4">
-                    <a href="{{ post.url | absolute_url }}">
-                        <img style="max-height: 200px" src="/{% if post.thumbnail-img %}{{ post.thumbnail-img | absolute_url }}{% else %}{{ site.thumbnail-img | absolute_url }}{% endif %}">
-                    </a>
+                    <img style="max-height: 200px" src="/{% if post.thumbnail-img %}{{ post.thumbnail-img }}{% else %}{{ site.thumbnail-img }}{% endif %}">
                 </div>
                 <div class="col-sm-8">
                     <h2 class="post-title">
