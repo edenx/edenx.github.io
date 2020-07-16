@@ -12,6 +12,7 @@ author: Yidan Xu
 # List of links in the navigation bar
 navbar-links:
   Blog: "index"
+  Photography: "photography"
   About Me: "aboutme"
 
 # --- Logo --- #
