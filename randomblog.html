@@ -10,7 +10,9 @@ title: Random
         <a href="{{ post.url | prepend: site.baseurl }}">
             <div class="row">
                 <div class="col-sm-4">
-                    <img style="max-height: 200px" src="/{% if post.header-img %}{{ post.header-img }}{% else %}{{ site.header-img }}{% endif %}">
+                    <a href="{{ post.url | absolute_url }}">
+                        <img style="max-height: 200px" src="/{% if post.thumbnail-img %}{{ post.thumbnail-img | absolute_url }}{% else %}{{ site.thumbnail-img | absolute_url }}{% endif %}">
+                    </a>
                 </div>
                 <div class="col-sm-8">
                     <h2 class="post-title">
