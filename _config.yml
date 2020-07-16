@@ -11,7 +11,8 @@ author: Yidan Xu
 
 # List of links in the navigation bar
 navbar-links:
-  Blog: "mathblog"
+  Home: "home"
+  Math Blog: "mathblog"
   Photography: "photography"
   About Me: "aboutme"
 
