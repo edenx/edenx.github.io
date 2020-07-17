@@ -14,6 +14,7 @@ navbar-links:
   Home: "index"
   Math Blog: "mathblog"
   Random: "randomblog"
+  Photography: "https://vsco.co/edenxy/gallery"
   About Me: "aboutme"
 
 # --- Logo --- #
