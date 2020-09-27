@@ -63,6 +63,7 @@ Immediately from the definition, we can see any reproducing kernel is a positive
 1. $\phi(x) = k(x,\cdot)\in \calH,\; \forall x\in \calX$;
 2. Span$\{\phi(x): x\in \mathcal{X}\}$ is dense in $\calH$; and
 3. $f(x) = \inner{\phi(x), f}_{\calH}\; \forall f\in\calH,\, x\in\calX$.
+
 Therefore, $\calH$ is the unique RKHS with reproducing kernel $k$, thus denoted by $H_k$._
 
 _Proof._ We here give a walk-through of the proof, for full details please refer to [2].
