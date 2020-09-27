@@ -17,15 +17,14 @@ To begin with, we give a concise introduction to the definitions and fundamental
 
 In the article, we use $\calH$ to denote Hilbert space if without specification; and we use 'linear operator' and 'linear map' interchangeably. The theory can be easily extended to spaces of complex-valued functions, but we here only present the results with real-valued functions for simplicity.
 
-<!-- <h2 class="section-heading">Basics and fundamental properties of RKHS</h2> -->
-## Basics and fundamental properties of RKHS
+<h2 class="section-heading">Basics and fundamental properties of RKHS</h2>
 
 We will start with introducing the space of fucntions that generalises Euclidean space.
 
 **Definition 1 (Hilbert Space).** _Let $\calH$ be a vector space with an inner product $\inner{\cdot, \cdot}\_{\calH}$, and the associated norm $\norm{\cdot}\_{\calH}$, where_
 <div>
 $$
-	\norm{f}_{\calH} = \sqrt{\inner{f,f}\_{\calH}},\; \forall f\in \calH
+	\norm{f}_{\calH} = \sqrt{\inner{f,f}_{\calH}},\; \forall f\in \calH
 $$
 </div>
 _Then the vector space $\calH$ is a Hilbert space if it is complete $w.r.t.$ the norm (with all Cauchy sequences converges in $\calH$)._
@@ -41,7 +40,7 @@ $$
 _and_
 <div>
 $$
-	\inner{f, k(x,\cdot)} = f(x),\; \forall f\in \calH,
+	\inner{f, k(x,\cdot)}_{\calH} = f(x),\; \forall f\in \calH,
 $$
 </div>
 _we call these the reproducing property of $k$.
@@ -63,21 +62,22 @@ Immediately from the definition, we can see any reproducing kernel is a positive
 1. $\phi(x) = k(x,\cdot)\in \calH,\; \forall x\in \calX$;
 2. $\span\\{\phi(x): x\in \mathcal{X}\\}$ is dense in $\calH$; and
 3. $f(x) = \inner{\phi(x), f}\_{\calH}\; \forall f\in\calH,\, x\in\calX$.
-Therefore, $\calH$ is the unique RKHS with reproducing kernel $k$, thus denoted by $H\_k$._
+
+_Therefore, $\calH$ is the unique RKHS with reproducing kernel $k$, thus denoted by $H\_k$._
 
 _Proof._ We here give a walk-through of the proof, for full details please refer to [2].
 Consider 
 <div>
 $$
-	H_{0,k} = \span\\{\phi(x): x\in\calX\\} 
-	= \\{f=\sum_{i=1}^s \alpha_i\phi(x_i):x_i \in \calX, \alpha_i\in\R\; \forall i=1,\dots,s, \;\mathrm{and}\; s\in\N\\},
+	H_{0,k} = \span\{\phi(x): x\in\calX\} 
+	= \{f=\sum_{i=1}^s \alpha_i\phi(x_i):x_i \in \calX, \alpha_i\in\R\; \forall i=1,\dots,s, \;\mathrm{and}\; s\in\N\},
 $$ 
 </div>
 then we show the bilinear form $\inner{\cdot, \cdot}\_{H\_{0,k}}: H\_{0,k} \times H\_{0,k} \to \R$,
 <div>
 $$
 	\inner{f, g}_{H_{0,k}} 
-	= \inner{\sum_{i=1}^s\alpha_i\phi(x_i), \sum_{j=1}^r\beta_j\phi(y_j)}
+	= \inner{\sum_{i=1}^s\alpha_i\phi(x_i), \sum_{j=1}^r\beta_j\phi(y_j)}_{\calH}
 	= \sum_{i=1}^s\sum_{j=1}^r \alpha_i\beta_j k(x_i, y_j)
 $$
 </div>
@@ -90,7 +90,7 @@ $$
 The following step is to show the completion of $H_{0,k}$ (by adding the limit of every Cauchy sequence $\\{f\_n\\}\_{n\in\N}\subset H\_{0,k}$) is a Hilbert space denoted by $H\_k$, with bilinear form $\inner{\cdot, \cdot}\_{H\_k}, \;s.t.$ there exists sequences $\\{f\_n\\}\_{n\in\N}, \\{g\_n\\}\_{n\in\N} \subset H\_{0,k}$
 <div>
 $$
-\inner{f,g}_{H_k} = \lim_{n\to \infty} \inner{f_n, g_n}_{H_{0,k}}.
+	\inner{f,g}_{H_k} = \lim_{n\to \infty} \inner{f_n, g_n}_{H_{0,k}}.
 $$
 </div>
 To do this, we need to verify that the limit exists (i.e. to show the sequence of inner product $\\{\inner{f\_n, g\_n}\_{H\_{0,k}}\\}\_{n\in\N}$ is a Cauchy sequence). Then, all three conditions follows directly from the definition of completion.
@@ -100,7 +100,7 @@ Lastly, the uniqueness of RKHS can be verified such that if $G\_k$ is also a Hil
 
 A direct consequence of Theorem 1 is that given any feature map $\phi(\cdot):\calX\to\calH$, we can define a positive definite function $k(x, x') = \inner{\phi(x), \phi(x')}\_{H\_k}$ and a corresponding RKHS via procedure demonstrated in Theorem 1; on the other hand, for any RKHS with kernel $k$ (which is unique), we may define the feature map to be $\phi(x) = k(x, \cdot)$. For appropriate choices of feature map, the reproducing kernel $k$ is in closed form. This means that, for data $\\{x\_n\\}\_{n\in\N}\subset\calX$, $k(x, x')$ can be computed directly without the evaluation of $\phi(x), \phi(x')$ and the inner product between them. This is known as the kernel method in ML. This is really useful as many feature maps are of infinite dimensions.
 
-Finally, we end this section with a remark:
+Finally, we end with a remark:
 
 **Remark 1.** _We can define a evaluation functional on $\calX$ that $k\_x\; s.t. \; k\_x(f) = f(x)$ for $f\in\calH$, which is a linear operator. Then we have that a Hilbert space is a RKHS iff $k\_x$ is continuous $\forall x\in \calX$. In addition, this implies all the functions in RKHS are continuous._
 _Proof._
@@ -112,11 +112,8 @@ Consider $k(x,y)$ as a function of $y$, then $k(x,y) = k\_y(g\_x) = \inner{g\_x,
 
 In fact, we will see in the following posts, an RKHS is characterised by a linear operator (associated to a feature map or a PSD kernel). Moreover, this view allows the smoothness property of RKHS to be analysed with spectral properties of the Integral operator of $k$, which gives connections to Harmonic analysis.
 
-
-<!-- <h2 class="section-heading">References</h2> -->
-
-## References
+<h2 class="section-heading">References</h2>
 
 1. Saburou Saitoh and Yoshihiro Sawano. Theory of reproducing kernels and applications. Springer, 2016.
-<!-- 2. Zaid Harchaoui, UW [STAT538 Lecture1 handout]({% link /docs/STAT538lec1.pdf %}). 2019. -->
+2. Zaid Harchaoui, UW [STAT538 Lecture1 handout](/docs/STAT538lec1.pdf). 2019.
 
