@@ -31,16 +31,12 @@ _It is said to be strictly positive definite if $h\equiv 0$, i.e. function $h$ i
 _Therefore, $\calH$ is the unique RKHS with reproducing kernel $k$, thus denoted by $H_k$._
 
 _Proof._ We here give a walk-through of the proof, for full details please refer to [2].
-
 Consider 
-
 \begin{align}
 	H\_{0,k} &= \span\\{\phi(x): x\in\calX\\} \\
 			 &= \\{f=\sum_{i=1}^s \alpha_i\phi(x_i):x_i \in \calX, \alpha_i\in\R\; \forall i=1,\dots,s, \;\mathrm{and} \;s\in\N\\},\\
 \end{align}
-
 then we show the bilinear form $\inner{\cdot, \cdot}\_{H\_{0,k}}: H\_{0,k} \times H\_{0,k} \to \R$,
-
 <div>
 $$
 	\inner{f, g}_{H_{0,k}}
@@ -48,27 +44,21 @@ $$
 	= \sum_{i=1}^s\sum_{j=1}^r \alpha_i\beta_j k(x_i, y_j)\, ,
 $$
 </div>
-
 is a well-defined inner product, which gives $H\_{0,k}$ the structure of a pre-Hilbert space. Moreover, we can prove that $(H_{0,k}, \inner{\cdot, \cdot}\_{H\_{0,k}})$ satisfies all three conditions in the statement. Note that the definition of the inner product gives condition 3., where 
-
 <div>
 $$
 	\inner{f, \phi(x)}_{H_{0,k}} = \sum_{i=1}^s k(x_i, x) = f(x).
 $$
 </div>
-
 The following step is to show the completion of $H_{0,k}$ (by adding the limit of every Cauchy sequence $\\{f_n\\}\_{n\in\N}\subset H_{0,k}$) is a Hilbert space denoted by $H_k$, with bilinear form $\inner{\cdot, \cdot}\_{H\_k}, \;s.t.$ there exists sequences $\\{f\_n\\}\_{n\in\N}, \\{g\_n\\}\_{n\in\N} \subset H\_{0,k}$,
-
 <div>
 $$
 	\inner{f,g}_{H_k} = \lim_{n\to \infty} \inner{f_n, g_n}_{H_{0,k}}.
 $$
 </div>
-
 To do this, we need to verify that the limit exists (i.e. to show the sequence of inner product $\\{\inner{f\_n, g\_n}\_{H\_{0,k}}\\}\_{n\in\N}$ is a Cauchy sequence). Then, all three conditions follows directly from the definition of completion.
 
 Lastly, the uniqueness of RKHS can be verified such that if $G_k$ is also a Hilbert space satisfying those three conditions, then $G\_k = H\_k$ and $\inner{\cdot, \cdot}\_{G\_k} = \inner{\cdot, \cdot}\_{H\_k}$. Notably, $H\_{0,k} \subset G\_k$ due to condition 2., and the equivalence of the inner product is directly given by 3. Now, since both $G\_k$ and $H\_k$ are completions of $H\_{0,k}$, the uniqueness follows from the uniqueness of the completion procedure. 
-
 <div style="text-align: right"> $\square$ </div>
 
 
