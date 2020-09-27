@@ -17,7 +17,7 @@ _**Disclaimer.** This post is served as a summarisation of my study notes on RKH
 
 <div>
 $$
-	\sum\_{x\_1, x\_2 \in \calX'} h(x\_1)h(x\_2)k(x\_1, x\_2)\geq 0
+	\sum_{x_1, x_2 \in \calX'} h(x_1)h(x_2)k(x_1, x_2)\geq 0
 $$
 </div>
 
