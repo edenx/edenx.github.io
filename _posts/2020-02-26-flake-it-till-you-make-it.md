@@ -10,13 +10,13 @@ tags: [test]
 category: math
 ---
 
-**Definition 1 (Hilbert Space).**_Let $\calH$ be a vector space with an inner product $\inner{\cdot, \cdot}_{\calH}$, and the associated norm $\norm{\cdot}_{\calH}$, where
+**Definition 2 (Positive Definite Quadratic Form).**_A function $k: \calX \times \calX \to \mathbb{R}$ is called a positive definite quadratic form, or positive definite function, if for any function $h:\calX\to \mathbb{R}$ and for any finite subset $\calX' \subset \calX$,_
 
 $$
-\norm{f}_{\calH} = \sqrt{\inner{f,f}_{\calH}},\; \forall f\in \calH
+\sum_{x_1, x_2 \in \calX'} h(x_1)h(x_2)k(x_1, x_2)\geq 0
 $$
 
-Then the vector space $\calH$ is a Hilbert space if it is complete $w.r.t.$ the norm (with all Cauchy sequences converges in $\calH$)._
+_It is said to be strictly positive definite if $h\equiv 0$, i.e. function $h$ is the zero function._
 
 Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
 
