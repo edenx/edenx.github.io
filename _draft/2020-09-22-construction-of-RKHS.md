@@ -9,7 +9,7 @@ category:   math
 ---
 
 _**Disclaimer.** This post is served as a summarisation of my study notes on RKHS theory [1], and classes I took on relevant topics, containing theoretical details from [1, 2] along with my interpretations directed by my personal interests on those topics. I am by no means an expert in functional analysis and spectral theory, so please feel free to point out any mistakes in the post._
-<br/><br/>
+<!-- <br/><br/> -->
 
 With the nice properties of Reproducing Kernel Hilbert Space (RKHS), many important results in ML are analysed theoretically with linear operators on these spaces. To dig into the details, we shall first look into fundamental properties of kernels and RKHS, and how it can be constructed from various perspectives.
 
@@ -17,7 +17,8 @@ To begin with, we give a concise introduction to the definitions and fundamental
 
 In the article, we use $\calH$ to denote Hilbert space if without specification; and we use 'linear operator' and 'linear map' interchangeably. The theory can be easily extended to spaces of complex-valued functions, but we here only present the results with real-valued functions for simplicity.
 
-<h2 class="section-heading">Basics and fundamental properties of RKHS</h2>
+<!-- <h2 class="section-heading">Basics and fundamental properties of RKHS</h2> -->
+## Basics and fundamental properties of RKHS
 
 We will start with introducing the space of fucntions that generalises Euclidean space.
 
@@ -95,7 +96,7 @@ To do this, we need to verify that the limit exists (i.e. to show the sequence o
 Lastly, the uniqueness of RKHS can be verified such that if $G_k$ is also a Hilbert space satisfying those three conditions, then $G_k = H_k$ and $\inner{\cdot, \cdot}_{G_k} = \inner{\cdot, \cdot}_{H_k}$. Notably, $H_{0,k}\subset G_k$ due to condition 2., and the equivalence of the inner product is directly given by 3. Now, since both $G_k$ and $H_k$ are completions of $H_{0,k}$, the uniqueness follows from the uniqueness of the completion procedure.
 
 $\square$
-{:.right}
+<!-- {:.right} -->
 
 A direct consequence of Theorem 1 is that given any feature map $\phi(\cdot):\calX\to\calH$, we can define a positive definite function $k(x, x') = \inner{\phi(x), \phi(x')}_{H_k}$ and a corresponding RKHS via procedure demonstrated in Theorem 1; on the other hand, for any RKHS with kernel $k$ (which is unique), we may define the feature map to be $\phi(x) = k(x, \cdot)$. For appropriate choices of feature map, the reproducing kernel $k$ is in closed form. This means that, for data $\{x_n\}_{n\in\N}\subset\calX$, $k(x, x')$ can be computed directly without the evaluation of $\phi(x), \phi(x')$ and the inner product between them. This is known as the kernel method in ML. This is really useful as many feature maps are of infinite dimensions.
 
@@ -108,12 +109,14 @@ Since in this case $k_x$ is a continuous linear operator, by Riesz representatio
 Consider $k(x,y)$ as a function of $y$, then $k(x,y) = k_y(g_x) = \inner{g_x, g_y}_{\calH} = g_x(y)$, for $g_x\in\calH$ a function of $x$, corresponding to the $f$ in last paragraph; and $g_y\in\calH$ a function of $y$ given by Riesz.
 
 $\square$
-{:.right}
+<!-- {:.right} -->
 
 In fact, we will see in the following posts, an RKHS is characterised by a linear operator (associated to a feature map or a PSD kernel). Moreover, this view allows the smoothness property of RKHS to be analysed with spectral properties of the Integral operator of $k$, which gives connections to Harmonic analysis.
 
 
-<h2 class="section-heading">References</h2>
+<!-- <h2 class="section-heading">References</h2> -->
+
+## References
 
 1. Saburou Saitoh and Yoshihiro Sawano. Theory of reproducing kernels and applications. Springer, 2016.
 <!-- 2. Zaid Harchaoui, UW [STAT538 Lecture1 handout]({% link /docs/STAT538lec1.pdf %}). 2019. -->
