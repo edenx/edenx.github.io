@@ -35,10 +35,9 @@ Then, the following definition gives a special space of functions with smoothnes
 **Definition 2 (RKHS).** _Let $\calX$ be a set and $\calH$ be a Hilbert space of functions defined on $\calH$. Then $\calH$ is a Reproducing Kernel Hilbert Space, if there exists a bilinear form $k: \calX \times \calX \to \R$ such that_
 <div>
 $$
-	\phi(x) = k(x,\cdot), \;\phi:\calX \to \calH \;\text{is the feature map},
+	\phi(x) = k(x,\cdot), \;\phi:\calX \to \calH \;\text{is the feature map, and}
 $$
  </div>
-_and_
 <div>
 $$
 	\inner{f, k(x,\cdot)}_{\calH} = f(x),\; \forall f\in \calH,
