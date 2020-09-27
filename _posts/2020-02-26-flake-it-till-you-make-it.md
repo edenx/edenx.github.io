@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
+title: RKHS norm as regularison for optimisation
+subtitle: 
 <!-- cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg -->
-header-img: /assets/img/thumb.png
-tags: [books, test]
+<!-- thumbnail-img: /assets/img/thumb.png -->
+tags: [kernel, graph Laplacian]
 category: random
 ---
 
