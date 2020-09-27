@@ -114,5 +114,5 @@ In fact, we will see in the following posts, an RKHS is characterised by a linea
 <h2 class="section-heading">References</h2>
 
 1. Saburou Saitoh and Yoshihiro Sawano. Theory of reproducing kernels and applications. Springer, 2016.
-2. Zaid Harchaoui, UW [STAT538 Lecture1 handout](../docs/STAT538lec1.pdf). 2019.
+2. Zaid Harchaoui, UW [STAT538 Lecture1 handout](/docs/STAT538lec1.pdf). 2019.
 
