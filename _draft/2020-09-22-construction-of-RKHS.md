@@ -13,7 +13,7 @@ _**Disclaimer.** This post is served as a summarisation of my study notes on RKH
 
 With the nice properties of Reproducing Kernel Hilbert Space (RKHS), many important results in ML are analysed theoretically with linear operators on these spaces. To dig into the details, we shall first look into fundamental properties of kernels and RKHS, and how it can be constructed from various perspectives.
 
-To begin with, we give a concise introduction to the definitions and fundamental properties of reproducing kernels and RKHS, which many readers who know kernel methods are familiar with. The following two articles will be devoted to constructing a valid kernel (and its RKHS) from a Complete Orthogonal System (CONS) of a separable Hilbert Space moreover eigen-decomposition of a linear operator on $\calL^2$. 
+To begin with, we give a concise introduction to the definitions and fundamental properties of reproducing kernels and RKHS, which many readers who know kernel methods are familiar with. The following two articles will be devoted to constructing a valid kernel (and its RKHS) from a Complete Orthogonal System (CONS) of a separable Hilbert Space moreover eigen-decomposition of a linear operator on $\mathcal{L}^2$. 
 
 In the article, we use $\calH$ to denote Hilbert space if without specification; and we use 'linear operator' and 'linear map' interchangeably. The theory can be easily extended to spaces of complex-valued functions, but we here only present the results with real-valued functions for simplicity.
 
@@ -29,7 +29,7 @@ Then the vector space $\calH$ is a Hilbert space if it is complete $w.r.t.$ the 
 
 Then, the following definition gives a special space of functions with smoothness properties.
 
-**Definition 2 (RKHS).**_Let $\calX$ be a set and $\calH$ be a Hilbert space of functions defined on $\calH$. Then $\calH$ is a Reproducing Kernel Hilbert Space, if there exists a bilinear form $k: \calX \times \calX \to \mathbb{R}$ such that 
+**Definition 2 (RKHS).**_ Let $\calX$ be a set and $\calH$ be a Hilbert space of functions defined on $\calH$. Then $\calH$ is a Reproducing Kernel Hilbert Space, if there exists a bilinear form $k: \calX \times \calX \to \mathbb{R}$ such that 
 $$
 \phi(x) = k(x,\cdot), \;\phi:\calX \to \calH \text{ is the feature map},
 $$
@@ -42,17 +42,18 @@ Finally, we denote the RKHS $\calH$ with reproducing kernel $k$ interchangeably 
 
 In the following, we will see the correspondence of $k$ and $H_k$ is one-to-one. But first, one more definition is introduced to characterise the bilinear form $k$.
 
-**Definition 2 (Positive Definite Quadratic Form).**_A function $k: \calX \times \calX \to \mathbb{R}$ is called a positive definite quadratic form, or positive definite function, if for any function $h:\calX\to \mathbb{R}$ and for any finite subset $\calX' \subset \calX$, 
+**Definition 2 (Positive Definite Quadratic Form).**_ A function $k: \calX \times \calX \to \mathbb{R}$ is called a positive definite quadratic form, or positive definite function, if for any function $h:\calX\to \mathbb{R}$ and for any finite subset $\calX' \subset \calX$, 
 $$
 \sum_{x_1, x_2 \in \calX'} h(x_1)h(x_2)k(x_1, x_2)\geq 0
 $$
-It is said to be strictly positive definite if $h\equiv 0$, i.e. function $h$ is the zero function._
+It is said to be strictly positive definite if $h\equiv 0$, i.e. function $h$ is the zero function.
+-
 
 Immediately from the definition, we can see any reproducing kernel is a positive definite function, or positive semi-definite (PSD) kernel. The opposite that any positive definite function induces a RKHS is more important and requires some derivations. 
 
 **Theorem 1 (Aronszajn, 1950).**_Let $\calX$ be a metric space, and $k:\calX\times \calX \to \mathbb{R}$ be a positive definite function, there exists a unique Hilbert space $(H_k, \inner{\cdot, \cdot}_{H_k})$ of functions on $\calX$ satisfying the followings:
 1. $\phi(x) = k(x,\cdot)\in \calH,\; \forall x\in \calX$;
-2. Span$\{\phi(x): x\in \mathcal{X}\}$ is dense in $\calH$; and
+2. Span$\{\phi(x): x\in \mathcal{X{\}$ is dense in $\calH$; and
 3. $f(x) = \inner{\phi(x), f}_{\calH}\; \forall f\in\calH,\, x\in\calX$.
 Therefore, $\calH$ is the unique RKHS with reproducing kernel $k$, thus denoted by $H_k$._
 
@@ -106,5 +107,5 @@ In fact, we will see in the following posts, an RKHS is characterised by a linea
 <h2 class="section-heading">References</h2>
 
 1. Saburou Saitoh and Yoshihiro Sawano. Theory of reproducing kernels and applications. Springer, 2016.
-<!-- 2. Zaid Harchaoui, UW [STAT538 Lecture1 handout]({% link /docs/STAT538lec1.pdf %}). 2019. -->
+2. Zaid Harchaoui, UW [STAT538 Lecture1 handout]({% link /docs/STAT538lec1.pdf %}). 2019.
 
