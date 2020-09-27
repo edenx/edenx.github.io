@@ -22,9 +22,8 @@ Consider $k(x,y)$ as a function of $y$, then $k(x,y) = k\_y(g\_x) = \inner{g\_x,
 
 In fact, we will see in the following posts, an RKHS is characterised by a linear operator (associated to a feature map or a PSD kernel). Moreover, this view allows the smoothness property of RKHS to be analysed with spectral properties of the Integral operator of $k$, which gives connections to Harmonic analysis.
 
-
 <h2 class="section-heading">References</h2>
 
 1. Saburou Saitoh and Yoshihiro Sawano. Theory of reproducing kernels and applications. Springer, 2016.
-2. Zaid Harchaoui, UW [STAT538 Lecture1 handout]({% link /docs/STAT538lec1.pdf %}). 2019.
+2. Zaid Harchaoui, UW \href{/docs/STAT538lec1.pdf}{STAT538 Lecture1 handout}. 2019.
 
