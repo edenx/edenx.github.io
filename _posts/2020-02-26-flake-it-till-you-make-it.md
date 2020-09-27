@@ -10,11 +10,16 @@ tags: [test]
 category: math
 ---
 
+_**Disclaimer.** This post is served as a summarisation of my study notes on RKHS theory [1], and classes I took on relevant topics, containing theoretical details from [1, 2] along with my interpretations directed by my personal interests on those topics. I am by no means an expert in functional analysis and spectral theory, so please feel free to point out any mistakes in the post._
+<br/><br/>
+
 **Definition 2 (Positive Definite Quadratic Form).** _A function $k: \calX \times \calX \to \R$ is called a positive definite quadratic form, or positive definite function, if for any function $h:\calX\to \mathbb{R}$ and for any finite subset $\calX' \subset \calX$,_
 
+<div>
 $$
 	\sum\_{x\_1, x\_2 \in \calX'} h(x\_1)h(x\_2)k(x\_1, x\_2)\geq 0
 $$
+</div>
 
 _It is said to be strictly positive definite if $h\equiv 0$, i.e. function $h$ is the zero function._
 
@@ -30,9 +35,14 @@ _Proof._ We here give a walk-through of the proof, for full details please refer
 Consider 
 
 \begin{align}
-	H\_{0,k} &= \span\\{\phi(x): x\in\calX\\}\\\
-	&= \\{f=\sum_{i=1}^s \alpha\_i\phi(x\_i):x\_i \in \calX, \alpha\_i\in\R\; \forall i=1,\dots,s, \mathrm{ and } s\in\N\\},
+	H\_{0,k} &= \span\\{\phi(x): x\in\calX\\} \\
+	&= \\{f=\sum_{i=1}^s \alpha\_i\phi(x\_i):x\_i \in \calX, \alpha\_i\in\R\; \forall i=1,\dots,s, \;\mathrm{and} \;s\in\N\\},
 \end{align}
+
+\displaylines{
+	H\_{0,k} &= \span\\{\phi(x): x\in\calX\\} \\
+	&= \\{f=\sum_{i=1}^s \alpha\_i\phi(x\_i):x\_i \in \calX, \alpha\_i\in\R\; \forall i=1,\dots,s, \;\mathrm{and} \;s\in\N\\},
+}
 
 then we show the bilinear form $\inner{\cdot, \cdot}\_{H\_{0,k}}: H\_{0,k} \times H\_{0,k} \to \R$,
 
