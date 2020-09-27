@@ -11,12 +11,42 @@ category: math
 ---
 
 **Definition 2 (Positive Definite Quadratic Form).**_A function $k: \calX \times \calX \to \mathbb{R}$ is called a positive definite quadratic form, or positive definite function, if for any function $h:\calX\to \mathbb{R}$ and for any finite subset $\calX' \subset \calX$,_
-
 $$
 \sum_{x_1, x_2 \in \calX'} h(x_1)h(x_2)k(x_1, x_2)\geq 0
 $$
-
 _It is said to be strictly positive definite if $h\equiv 0$, i.e. function $h$ is the zero function._
+
+**Theorem 1 (Aronszajn, 1950).**_Let $\calX$ be a metric space, and $k:\calX\times \calX \to \mathbb{R}$ be a positive definite function, there exists a unique Hilbert space $(H_k, \inner{\cdot, \cdot}_{H_k})$ of functions on $\calX$ satisfying the followings:
+1. $\phi(x) = k(x,\cdot)\in \calH,\; \forall x\in \calX$;
+2. Span$\{\phi(x): x\in \mathcal{X}\}$ is dense in $\calH$; and
+3. $f(x) = \inner{\phi(x), f}_{\calH}\; \forall f\in\calH,\, x\in\calX$.
+Therefore, $\calH$ is the unique RKHS with reproducing kernel $k$, thus denoted by $H_k$._
+
+_Proof._ We here give a walk-through of the proof, for full details please refer to [2].
+
+Consider 
+$$H_{0,k} = \span\{\phi(x): x\in\calX\} = \{f=\sum_{i=1}^s \alpha_i\phi(x_i):x_i \in \calX, \alpha_i\in\R\; \forall i=1,\dots,s, \mathrm{ and } s\in\N\},$$ 
+
+then we show the bilinear form $\inner{\cdot, \cdot}_{H_{0,k}}: H_{0,k} \times H_{0,k} \to \R$,
+$$
+\inner{f, g}_{H_{0,k}} 
+= \inner{\sum_{i=1}^s\alpha_i\phi(x_i), \sum_{j=1}^r\beta_j\phi(y_j)}
+= \sum_{i=1}^s\sum_{j=1}^r \alpha_i\beta_j k(x_i, y_j)
+$$
+is a well-defined inner product, which gives $H_{0,k}$ the structure of a pre-Hilbert space. Moreover, we can prove that $(H_{0,k}, \inner{\cdot, \cdot}_{H_{0,k}})$ satisfies all three conditions in the statement. Note that the definition of the inner product gives condition 3., where 
+$$
+\inner{f, \phi(x)}_{H_{0,k}} = \sum_{i=1}^s k(x_i, x) = f(x).
+$$
+The following step is to show the completion of $H_{0,k}$ (by adding the limit of every Cauchy sequence $\{f_n\}_{n\in\N}\subset H_{0,k}$) is a Hilbert space denoted by $H_k$, with bilinear form $\inner{\cdot, \cdot}_{H_k}, \;s.t.$ there exists sequences $\{f_n\}_{n\in\N}, \{g_n\}_{n\in\N} \subset H_{0,k}$
+$$
+\inner{f,g}_{H_k} = \lim_{n\to \infty} \inner{f_n, g_n}_{H_{0,k}}.
+$$
+To do this, we need to verify that the limit exists (i.e. to show the sequence of inner product $\{\inner{f_n, g_n}_{H_{0,k}}\}_{n\in\N}$ is a Cauchy sequence). Then, all three conditions follows directly from the definition of completion.
+
+Lastly, the uniqueness of RKHS can be verified such that if $G_k$ is also a Hilbert space satisfying those three conditions, then $G_k = H_k$ and $\inner{\cdot, \cdot}_{G_k} = \inner{\cdot, \cdot}_{H_k}$. Notably, $H_{0,k}\subset G_k$ due to condition 2., and the equivalence of the inner product is directly given by 3. Now, since both $G_k$ and $H_k$ are completions of $H_{0,k}$, the uniqueness follows from the uniqueness of the completion procedure.
+
+$\square$
+{:.right}
 
 Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
 
