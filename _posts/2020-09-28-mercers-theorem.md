@@ -40,7 +40,7 @@ It follows directly that such $T$ is diagonalisable, and each non-zero eigenvalu
 <h2 class="section-heading">Mercer expansion of integral operator</h2>
 We first show the $K$ is Hilbert-Schmidt (HS).
 
-**Lemma 1.** Operator $K$ defined in \eqref{Eq:HSIO} is Hilbert-Schmidt.
+**Lemma 1.** _Operator $K$ defined in \eqref{Eq:HSIO} is Hilbert-Schmidt._
 _Proof._
 Recall that an operator $T$ on a separable Hilbert space is HS if for any Complete orthogonal system (CONS) $\\{\psi\_i\\}\_{i=1}^{\infty}$, we have the following
 <div>
@@ -68,7 +68,7 @@ $$
 </div>
 Since $k\in \calL^2(\calX\times\calX, \mu)$, the term on the RHS is bounded. Then we complete the proof.
 <div style="text-align: right"> $\square$ </div>
-**Remark.** _Interestingly, for any HS operator $T$ on separable $\calL^2(\calX, \mu)$, there is a square integrable function $k\_T\in \calL^2(\calX\times\calX, \mu)$ such that $T$ can be written in the form of \eqref{eq:HSIO} [4]._
+**Remark.** _Interestingly, for any HS operator $T$ on separable $\calL^2(\calX, \mu)$, there is a square integrable function $k\_T\in \calL^2(\calX\times\calX, \mu)$ such that $T$ can be written in the form of \eqref{Eq:HSIO} [4]._
 
 **Remark.** _We have seen in [Part 2](2020-09-24-hilbert-basis.md) that an RKHS can be characterised with any CONS of the separable Hilbert space $\calH$, however it is dependent on the choice for the basis. On the other hand, the norm of HS integral operator $K$ is specified irrespective of the CONS._
 _Proof (informal)._
@@ -89,13 +89,13 @@ _where the second equality is due to $T\psi\_i = \sum\_{j=1}^{\infty} \inner{T\p
 <div style="text-align: right"> $\square$ </div>
 Furthermore, the following Proposition gives that the HS-integral operator is compact and self-adjoint.
 
-**Proposition 1 (Hilbert-Schmidt, M.Einsiedler 2017).** _Let $(\calX, \calB\_{\calX}, \mu)$, $(\calY, \calB\_{\calY}, \nu)$ be $\sigma$-finite measure spaces. Let $k\in \calL^2(\calX \times\calY, \mu\times\nu)$. Then the HS integral operator $T\_k:\calL^2(\calX, \mu)\to \calL^2(\calY, \nu)$ defined by
+**Proposition 1 (Hilbert-Schmidt, M.Einsiedler 2017).** _Let $(\calX, \calB\_{\calX}, \mu)$, $(\calY, \calB\_{\calY}, \nu)$ be $\sigma$-finite measure spaces. Let $k\in \calL^2(\calX \times\calY, \mu\times\nu)$. Then the HS integral operator $T\_k:\calL^2(\calX, \mu)\to \calL^2(\calY, \nu)$ defined by_
 <div>
 $$
   T_k(f)(y) = \int_{\calX} f(x)k(x,y)\;d\mu(x)
 $$
 </div>
-for $\nu$-almost everywhere $y\in\calY$ defines a compact operator._
+_for $\nu$-almost everywhere $y\in\calY$ defines a compact operator._
 
 In addition, $T\_k$ in Proposition 1 is also continuous thus bounded [3], and it is self-adjoint as long as $k(x,y) = k(y,x)$ (which is automatically satisfied if $k$ is a real-valued PSD kernel). Clearly, Proposition 1 applies to our integral operator $K\in L^2(\calX\times\calX, \mu)$; with the assumption that $\calL^2$ is a separable Hilbert space, $K$ admits a set of non-zero eigenvalues $\\{\lambda\_j\\}\_j$ and eigenvectors $\\{\phi\_j\\}\_j$. Moreover, by the property of HS operator, we have that $K = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, which can be seen as a generalisation to eigen-decomposition for Hermitian matrices [3].
 
