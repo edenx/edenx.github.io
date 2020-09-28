@@ -116,6 +116,7 @@ $$
 $$
 </div>
 Then the Fourier transform of $k(x,x')$ is
+<div>
 $$
   \begin{align*}
     \calF(k(x,\cdot))(\omega)
@@ -124,6 +125,7 @@ $$
     &= (2\pi)^{-d/2}\nu(\omega)e^{-i\inner{x, \omega}}
   \end{align*}
 $$
+</div>
 Substuting back the expression of $e^{-i\inner{x, \omega}}$ in terms of $\calF(k(x,\cdot))(\omega)$ into the kernel gives the following form of $k$
 <div>
 $$
