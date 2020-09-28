@@ -51,16 +51,15 @@ $$
 </div>
 This implies that $\ker{L}$ is a closed subspace of $\calH$, therefore for some $\mathbf{h}\in\ker{L}$ and $f = L\mathbf{f}$,
 <div>
-\begin{equation}
-  \label{Eq:isometry}
+$$
   \begin{align}
   \norm{f}_{\calR(L)}
   &=\norm{L\mathbf{f}}_{\calR(L)}
   = \norm{L\mathbf{f} - L\mathbf{h}}_{\calR(L)}
   = \inf_{\mathbf{h}\in\ker{L}}\norm{\mathbf{f}-\mathbf{h}}_{\calH}\\
-  &=\norm{\Pker\mathbf{f}}_{\calH}
+  &=\norm{\Pker\mathbf{f}}_{\calH} \label{Eq:isometry}
   \end{align}
-\end{equation}
+$$
 </div>
 which means $L\vert\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Hence, the latter is a Hilbert space.
 
@@ -73,13 +72,13 @@ $$
 hence ${\phi(x)}\_{x\in\calX}\subset \ker{L}^{\perp}$. For some $\mathbf{f}\in\calH\; s.t. \; f = L\mathbf{f}\in\calR(L)$, the reproducing property follows accordingly,
 <div>
 $$
-  \begin{align}
+  \begin{align*}
     \inner{f, k(x,\cdot)}_{\calR(L)}
     &= \inner{L\mathbf{f}, L\phi(x)}_{\calH}
     = \inner{\Pker \mathbf{f}, \Pker \phi(x)}_{\calH}\\
     &= \inner{\Pker\mathbf{f}, \phi(x)}_{\calH}
     = L\mathbf{f}(x) = f(x)
-  \end{align}
+  \end{align*}
 $$
 </div>
 where the second equality is due to Equation \eqref{Eq:isometry}, the third equality is by the definiton of $L$. And the uniqueness of $k$ can be easily verified by considering $k(x,\cdot)$.
