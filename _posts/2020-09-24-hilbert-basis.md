@@ -139,7 +139,7 @@ $$
   H_k = \{f\in \calL^2(\R^d):\int_{\R^d}\frac{\abs{F(f)}^2}{\nu(\omega)}\;d\omega < +\infty\}.
 $$
 </div>
-This representation of $H\_k$ is also useful in defining/proving characteristic kernel, where informally, a characteristic kernel is a uniformly bounded PSD kernel that injectively maps a probability distribution $P$ to its mean element $\mu\_{P}$ (s.t. \E\_{x\sim P}[f(x)] = \inner{\mu\_P, f}\_{H\_k). This is used in e.g. Maximum mean discrepancy for two samples test.
+This representation of $H\_k$ is also useful in defining/proving characteristic kernel, where informally, a characteristic kernel is a uniformly bounded PSD kernel that injectively maps a probability distribution $P$ to its mean element $\mu\_{P}$ (s.t. $\E\_{x\sim P}[f(x)] = \inner{\mu\_P, f}\_{H\_k}$). This is used in e.g. Maximum mean discrepancy for two samples test.
 
 <h2 class="section-heading">Characterising RKHS via CONS of separable Hilbert space</h2>
 Finally, we will see how a RKHS may be represented by any Complete orthogonal system (CONS) of separable Hilbert space.
@@ -160,11 +160,11 @@ $$
 </div>
 In addition, we can equivalently define the kernel $k$ as
 $$
-\begin{align*}
-  k(x, y) &= \inner{\phi(x), \phi(y)}_{\calH} \\
-  &= \sum_{j=1}^{\infty} \inner{\phi(x), V_j}\inner{\phi(y), V_j}\\
-  &= \sum_{j=1}^{\infty} v_j(x)v_j(y)
-\end{align*}
+  \begin{align*}
+    k(x, y) &= \inner{\phi(x), \phi(y)}_{\calH}
+    = \sum_{j=1}^{\infty} \inner{\phi(x), V_j}\inner{\phi(y), V_j}\\
+    &= \sum_{j=1}^{\infty} v_j(x)v_j(y)
+  \end{align*},
 $$
 again by Parseval's identity.
 
