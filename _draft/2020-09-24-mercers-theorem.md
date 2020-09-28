@@ -26,13 +26,13 @@ $K$ is a Hilbert-Schmidt integral operator (abbreviated as integral operator in 
 **Definition 2 (Self-adjoint operator).**_A bounded operator $T$ as in Definition 1 is called self-adjoint if $A^{\ast} = A$, where $A^{\ast$ is the adjoint of $A$._
 
 <!-- Spectral theorem for compact self-adjoint in Hilbert space -->
-**Theorem 1 (Thm 6.27, M.Einsiedler 2017).**_Let $\calH$ be a seperable Hilbert space, and $T$ a compact self-adjoint operator on $\calH$. Then there exists a sequence of real eigenvalues $\{\lambda_n\}_n$ with $\abs{\lambda_n}\to 0$ as $n\to\infty$; and an orthonormal basis $\{v_n\}_n$ of eigenvectors with $A v_n = \lambda_n v_n\; \forall n\geq 1$._
+**Theorem 1 (Thm 6.27, M.Einsiedler 2017).**_Let $\calH$ be a seperable Hilbert space, and $T$ a compact self-adjoint operator on $\calH$. Then there exists a sequence of real eigenvalues $\\{\lambda_n\\}_n$ with $\abs{\lambda_n}\to 0$ as $n\to\infty$; and an orthonormal basis $\\{v_n\\}_n$ of eigenvectors with $A v_n = \lambda_n v_n\; \forall n\geq 1$._
 
 It follows directly that such $T$ is diagonalisable, and each non-zero eigenvalue has finite-multiplicity. 
 
 <h2 class="section-heading">Mercer expansion of integral operator</h2>
 
-We first show the integral operator $K$ defined in the beginning is indeed Hilbert-Schmidt. Recall that an operator $T$ on a seperable Hilbert space is HS if for any CONS $\{\psi_i\}_{i=1}^{\infty}$, 
+We first show the integral operator $K$ defined in the beginning is indeed Hilbert-Schmidt. Recall that an operator $T$ on a seperable Hilbert space is HS if for any CONS $\\{\psi_i\\}_{i=1}^{\infty}$, 
 $$
 \norm{T}_{HS}^2 = \sum_{i=1}^{\infty}\norm{T\psi_i}^2 < \infty.
 $$
@@ -58,7 +58,7 @@ K(f)(y) = \int_{\calX} f(x)k(x,y)\;d\mu(x)
 $$
 for $\nu$-almost everywhere $y\in\calY$ defines a compact operator._
 
-In addition, $K$ in Proposition 1 is also continuous thus bounded [3], and it is self-adjoint as long as $k(x,y) = k(y,x)$. Clearly, Proposition 1 applies to our integral operator $K\in L^2(\calX\times\calX, \mu)$; with the assumption that $\calL^2$ is a seperable Hilbert space, $K$ admits a set of non-zero eigenvalues $\{\lambda_j\}_j$ and eigenvectors $\{\phi_j\}_j$. Moreover, by the property of Hilbert-Schmidt operator, we have that $K = \sum_{i}\lambda_i (\phi_i \otimes \phi_i)$, which can be seen as a generalisation to eigen-decomposition [4].
+In addition, $K$ in Proposition 1 is also continuous thus bounded [3], and it is self-adjoint as long as $k(x,y) = k(y,x)$. Clearly, Proposition 1 applies to our integral operator $K\in L^2(\calX\times\calX, \mu)$; with the assumption that $\calL^2$ is a seperable Hilbert space, $K$ admits a set of non-zero eigenvalues $\\{\lambda_j\\}_j$ and eigenvectors $\\{\phi_j\\}_j$. Moreover, by the property of Hilbert-Schmidt operator, we have that $K = \sum_{i}\lambda_i (\phi_i \otimes \phi_i)$, which can be seen as a generalisation to eigen-decomposition [4].
 
 We will see that for positive definite quadratic form (condition 2 in Theorem 2), operator $K$ has positive eigenvalues. We present here a modification of Mercer's theorem in [1] to accommodate the setting given in the beginning, however, it can be shown to apply to a more general scenario.
 
@@ -75,9 +75,9 @@ Finally, as a consequence of Theorem 2, we present the explicit expression of RK
 
 **Theorem 3 (Thm 18, K.Fukumizu 2010).**_Under the same notation, we have a RKHS with $k$ s.t.
 **
-H_k = \{f\in\calL^2(\calX, \mu): 
+H_k = \\{f\in\calL^2(\calX, \mu): 
 f = \sum_i^{\infty} a_i \phi_i, \; 
-\norm{f}_{H_k}^2 = \sum_i^{\infty} \frac{\abs{a_i}^2}{\lambda_i}<\infty\},
+\norm{f}_{H_k}^2 = \sum_i^{\infty} \frac{\abs{a_i}^2}{\lambda_i}<\infty\\},
 **
 and that the inner product of RKHS is of the form
 $$
