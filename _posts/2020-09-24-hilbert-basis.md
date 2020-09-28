@@ -159,6 +159,7 @@ $$
 $$
 </div>
 In addition, we can equivalently define the kernel $k$ as
+<div>
 $$
   \begin{align*}
     k(x, y) &= \inner{\phi(x), \phi(y)}_{\calH}
@@ -166,6 +167,7 @@ $$
     &= \sum_{j=1}^{\infty} v_j(x)v_j(y)
   \end{align*},
 $$
+</div>
 again by Parseval's identity.
 
 With the above setup, we are now ready to give an alternative characterisation of RKHS [1],
