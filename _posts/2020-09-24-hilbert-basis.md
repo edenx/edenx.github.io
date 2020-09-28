@@ -118,12 +118,12 @@ $$
 Then the Fourier transform of $k(x,x')$ is
 <div>
 $$
-  \begin{align}
+  \begin{align*}
     \calF(k(x,\cdot))(\omega)
     & = (2\pi)^{-d/2} \int\int(\nu(\omega')e^{-i\inner{x, \omega'}})
     e^{i\inner{x', \omega'}}\;d\omega' e^{-i\inner{x', \omega}} dx' \\
     &= (2\pi)^{-d/2}\nu(\omega)e^{-i\inner{x, \omega}}
-  \end{align}
+  \end{align*}
 $$
 </div>
 Substuting back the expression of $e^{-i\inner{x, \omega}}$ in terms of $\calF(k(x,\cdot))(\omega)$ into the kernel gives the following form of $k$
@@ -159,13 +159,13 @@ $$
 $$
 </div>
 In addition, we can equivalently define the kernel $k$ as
-
-\begin{align}
-  k(x, y) &= \inner{\phi(x), \phi(y)}_{\calH} \\\\
-  &= \sum_{j=1}^{\infty} \inner{\phi(x), V_j}\inner{\phi(y), V_j}\\\\
+$$
+\begin{align*}
+  k(x, y) &= \inner{\phi(x), \phi(y)}_{\calH} \\
+  &= \sum_{j=1}^{\infty} \inner{\phi(x), V_j}\inner{\phi(y), V_j}\\
   &= \sum_{j=1}^{\infty} v_j(x)v_j(y)
-\end{align}
-
+\end{align*}
+$$
 again by Parseval's identity.
 
 With the above setup, we are now ready to give an alternative characterisation of RKHS [1],
