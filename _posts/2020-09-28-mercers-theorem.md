@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Part 3: Mercer's theorem and the spectral perspective of RKHS"
-subtitle:   "In this article, we provide another formulation of RKHS in terms of the spectrum of the Integral operator corresponding to a reproducing kernel, which is given by Mercer's Theorem and the property of Compact operators in Hilbert space."
+subtitle:   "In this article, we provide another formulation of RKHS in terms of the spectrum of the Integral operator corresponding to a reproducing kernel, which is given by Mercer's Theorem and the property of Compact operators in separable Hilbert space."
 date:       2020-09-28 16:40
 author:     "edenx"
 tags: 		  [kernel, fundamentals of RKHS]
@@ -92,7 +92,7 @@ Furthermore, the following Proposition gives that the HS-integral operator is co
 **Proposition 1 (Hilbert-Schmidt, M.Einsiedler 2017).** _Let $(\calX, \calB\_{\calX}, \mu)$, $(\calY, \calB\_{\calY}, \nu)$ be $\sigma$-finite measure spaces. Let $k\in \calL^2(\calX \times\calY, \mu\times\nu)$. Then the HS integral operator $T\_k:\calL^2(\calX, \mu)\to \calL^2(\calY, \nu)$ defined by
 <div>
 $$
-  T_k(f)(y) = \int\_{\calX} f(x)k(x,y)\;d\mu(x)
+  T_k(f)(y) = \int_{\calX} f(x)k(x,y)\;d\mu(x)
 $$
 </div>
 for $\nu$-almost everywhere $y\in\calY$ defines a compact operator._
@@ -103,7 +103,7 @@ Finally, Theorem 6 says that for positive definite quadratic form (condition 2 i
 
 **Theorem 6 (Mercer's theorem, S.Saitoh 2016).** _For $\mu$ and $\calX$ defined previously, assume $k$ satisfies the following assumptions:_
 1. _$k(x,y) = k(y,x)\;\forall x,y\in\supp{\mu}$;_
-2. _\int\int\_{\calX\times\calX} k(x,y)f(x)f(y)\;d\mu(y) \geq 0, \;\forall f\in\calL^2(\calX, \mu)._
+2. $\int\int\_{\calX\times\calX} k(x,y)f(x)f(y)\;d\mu(y) \geq 0, \;\forall f\in\calL^2(\calX, \mu).$
 
 _Then $K$ admits a set of positive eigenvalues and corresponding orthonomorl eigenfunctions, where $K = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, where the convergence is absolute and uniform on $\supp{\mu\times\mu}$._
 
@@ -143,5 +143,5 @@ Finally, we end the article with a remark on the implication of this expression 
 
 1. Saitoh, S and Sawano, Y. Theory of reproducing kernels and applications. Springer, 2016.
 2. Einsiedler, M, and Ward, T. Functional analysis, spectral theory, and applications. Vol. 276. Springer, 2017.
-3. Fukumizu, K. Kernel Method: Data Analysis with Positive Definite Kernels, Lecture 5, \url{http://stat.sys.i.kyoto-u.ac.jp/titech/class/fukumizu/Kernel_theory_5.pdf}. Tokyo Institute of Technology, 2010.
-4. Jordan, M. Stat241B: Advanced Topics in Learning & Decision Making, Reproducing kernel Hilbert spaces I \url{https://people.eecs.berkeley.edu/~jordan/courses/281B-spring04/lectures/rkhs.pdf}. University of California Berkeley, 2004.
+3. Fukumizu, K. Kernel Method: Data Analysis with Positive Definite Kernels, [Lecture 5](http://stat.sys.i.kyoto-u.ac.jp/titech/class/fukumizu/Kernel_theory_5.pdf). Tokyo Institute of Technology, 2010.
+4. Jordan, M. Stat241B: Advanced Topics in Learning & Decision Making, [Reproducing kernel Hilbert spaces I](https://people.eecs.berkeley.edu/~jordan/courses/281B-spring04/lectures/rkhs.pdf). University of California Berkeley, 2004.
