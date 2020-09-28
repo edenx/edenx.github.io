@@ -19,7 +19,7 @@ In the article, we use $\calH$ to denote Hilbert space if without specification;
 Consider a feature map $\phi:\calX\to \calH$, then we define a linear operator $L:\calH\to \calF(\calX)$ from a Hilbert space $\calH$ on $\calX$ to the space of all real-valued functions on $\calX$, s.t.
 <div>
 $$
-  L\bf = \inner{\bf, \phi(\cdot)}_{\calH}\; \forall \bf\in \calH
+  L\mathbf{f} = \inner{\mathbf{f}, \phi(\cdot)}_{\calH}\; \forall \mathbf{f}\in \calH
 $$
 </div>
 Moreover, we define the quadratic form
@@ -31,7 +31,7 @@ $$
 which is a positive definite function as in [Part 1](2020-09-22-construction-of-RKHS.md). Then we denote by $\calR(L)$ the image space of $L$, which is a linear function space. In $\calR(L)$, consider the norm
 <div>
 $$
-  \norm{f}_{\calR(L)} \equiv \inf\{\norm{\bf}_{\calH}: \bf\in\calH, f = L\bf\},
+  \norm{f}_{\calR(L)} \equiv \inf\{\norm{\mathbf{f}}_{\calH}: \mathbf{f}\in\calH, f = L\mathbf{f}\},
 $$
 </div>
 Then we have the following theorem giving the construction of RKHS via $L$.
@@ -45,46 +45,46 @@ _Proof._
 We first denote $\Pker:\calH \to \calR(L)$ as the orthogonal projection from $\calH$ to $\ker{L}^{\perp}$, where $\ker{L}$ is the null space of the linear mapping $L$ defined as
 <div>
 $$
-    \ker{L} \equiv \{\bf\in\calH: L\bf=0\}
-    = \cap_{x\in\calX}\{\bf\in\calH:\inner{f, \phi(x)}_{\calH} = 0\}
+    \ker{L} \equiv \{\mathbf{f}\in\calH: L\mathbf{f}=0\}
+    = \cap_{x\in\calX}\{\mathbf{f}\in\calH:\inner{f, \phi(x)}_{\calH} = 0\}
 $$
 </div>
-This implies that $\ker{L}$ is a closed subspace of $\calH$, therefore for some $\bh\in\ker{L}$ and $f = L\bf$,
+This implies that $\ker{L}$ is a closed subspace of $\calH$, therefore for some $\mathbf{h}\in\ker{L}$ and $f = L\mathbf{f}$,
 <div>
 \begin{equation}
   \label{Eq:isometry}
   \begin{align}
   \norm{f}_{\calR(L)}
-  &=\norm{L\bf}_{\calR(L)}
-  = \norm{L\bf - L\bh}_{\calR(L)}
-  = \inf_{\bh\in\ker{L}}\norm{\bf-\bh}_{\calH}\\
-  &=\norm{\Pker\bf}_{\calH}
+  &=\norm{L\mathbf{f}}_{\calR(L)}
+  = \norm{L\mathbf{f} - L\mathbf{h}}_{\calR(L)}
+  = \inf_{\mathbf{h}\in\ker{L}}\norm{\mathbf{f}-\mathbf{h}}_{\calH}\\
+  &=\norm{\Pker\mathbf{f}}_{\calH}
   \end{align}
 \end{equation}
 </div>
 which means $L\vert\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Hence, the latter is a Hilbert space.
 
-Now, we turn to the second property. Clearly, $k(x,\cdot) = L\phi(x) = \inner{\phi(\cdot), \phi(x)}\_{\calH} \in \calR(L)$; and for any $\bf\_0\in\ker{L}$,
+Now, we turn to the second property. Clearly, $k(x,\cdot) = L\phi(x) = \inner{\phi(\cdot), \phi(x)}\_{\calH} \in \calR(L)$; and for any $\mathbf{f}\_0\in\ker{L}$,
 <div>
 $$
-  \inner{\bf_0, \phi(x)}_{\calH} = 0 \;\forall x\in\calX
+  \inner{\mathbf{f}_0, \phi(x)}_{\calH} = 0 \;\forall x\in\calX
 $$
 </div>
-hence ${\phi(x)}\_{x\in\calX}\subset \ker{L}^{\perp}$. For some $\bf\in\calH\; s.t. \; f = L\bf\in\calR(L)$, the reproducing property follows accordingly,
+hence ${\phi(x)}\_{x\in\calX}\subset \ker{L}^{\perp}$. For some $\mathbf{f}\in\calH\; s.t. \; f = L\mathbf{f}\in\calR(L)$, the reproducing property follows accordingly,
 <div>
 $$
   \begin{align}
     \inner{f, k(x,\cdot)}_{\calR(L)}
-    &= \inner{L\bf, L\phi(x)}_{\calH}
-    = \inner{\Pker \bf, \Pker \phi(x)}_{\calH}\\
-    &= \inner{\Pker\bf, \phi(x)}_{\calH}
-    = L\bf(x) = f(x)
+    &= \inner{L\mathbf{f}, L\phi(x)}_{\calH}
+    = \inner{\Pker \mathbf{f}, \Pker \phi(x)}_{\calH}\\
+    &= \inner{\Pker\mathbf{f}, \phi(x)}_{\calH}
+    = L\mathbf{f}(x) = f(x)
   \end{align}
 $$
 </div>
 where the second equality is due to Equation \eqref{Eq:isometry}, the third equality is by the definiton of $L$. And the uniqueness of $k$ can be easily verified by considering $k(x,\cdot)$.
 
-Finally, we have seen from Equation \eqref{Eq:isometry}, $L\vert\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Then $L$ is isomorphic iff $\calH=\ker{L}^{\perp}$. Now, if $\bf\in\calH$ is perpendicular to all $\phi(x), x\in\calX$, then $\inner{f, \phi(x)}\_{\calH} = 0\;\forall x\in\calX$, with the injectivity of $L$, we must have $\bf\equiv 0$. Therefore, $\\{\phi(x): x\in\calX\\}$ spans a dense subspace of $\calH$.
+Finally, we have seen from Equation \eqref{Eq:isometry}, $L\vert\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Then $L$ is isomorphic iff $\calH=\ker{L}^{\perp}$. Now, if $\mathbf{f}\in\calH$ is perpendicular to all $\phi(x), x\in\calX$, then $\inner{f, \phi(x)}\_{\calH} = 0\;\forall x\in\calX$, with the injectivity of $L$, we must have $\mathbf{f}\equiv 0$. Therefore, $\\{\phi(x): x\in\calX\\}$ spans a dense subspace of $\calH$.
 
 Moreover, we know $\\{\phi(x): x\in\calX\\}\subset \ker{L}^{\perp}$, hence $\calH = \ker{L}^{\perp}$.
 <div style="text-align: right"> $\square$ </div>
