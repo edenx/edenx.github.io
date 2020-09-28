@@ -5,7 +5,7 @@ subtitle:   "This is the first post of a three-part series on fundamentals of RK
 thumbnail-img: ""
 date:       2020-09-22 10:00
 author:     "edenx"
-tags: 		[kernel]
+tags: 		[kernel, fundamentals of RKHS]
 category:   math
 ---
 
@@ -48,7 +48,7 @@ Finally, we denote the RKHS $\calH$ with reproducing kernel $k$ interchangeably 
 
 In the following, we will see the correspondence of $k$ and $H_k$ is one-to-one. But first, one more definition is introduced to characterise the bilinear form $k$.
 
-**Definition 2 (Positive Definite Quadratic Form).** _A function $k: \calX \times \calX \to \R$ is called a **positive definite quadratic form**, or a **positive definite function**, if for any function $h:\calX\to \R$ and for any finite subset $\calX' \subset \calX$,_
+**Definition 3 (Positive Definite Quadratic Form).** _A function $k: \calX \times \calX \to \R$ is called a **positive definite quadratic form**, or a **positive definite function**, if for any function $h:\calX\to \R$ and for any finite subset $\calX' \subset \calX$,_
 <div>
 $$
 	\sum_{x_1, x_2 \in \calX'} h(x_1)h(x_2)k(x_1, x_2)\geq 0
@@ -58,10 +58,10 @@ _It is said to be strictly positive definite if $h\equiv 0$, i.e. function $h$ i
 
 Immediately from the definition, we can see any reproducing kernel is a positive definite function, or what is often referred to as _**positive semi-definite (PSD) kernel**_. The opposite that any positive definite function induces a RKHS is more important and requires some derivations.
 
-**Theorem 1 (Aronszajn, 1950).** _Let $\calX$ be a metric space, and $k:\calX\times \calX \to \mathbb{R}$ be a positive definite function, there exists a unique Hilbert space $(H\_k, \inner{\cdot, \cdot}\_{H\_k})$ of functions on $\calX$ satisfying the followings:
-1. $\phi(x) = k(x,\cdot)\in \calH,\; \forall x\in \calX$;
-2. $\span\\{\phi(x): x\in \mathcal{X}\\}$ is dense in $\calH$; and
-3. $f(x) = \inner{\phi(x), f}\_{\calH}\; \forall f\in\calH,\, x\in\calX$.
+**Theorem 1 (Aronszajn, 1950).** _Let $\calX$ be a metric space, and $k:\calX\times \calX \to \mathbb{R}$ be a positive definite function, there exists a unique Hilbert space $(H\_k, \inner{\cdot, \cdot}\_{H\_k})$ of functions on $\calX$ satisfying the followings:_
+1. _$\phi(x) = k(x,\cdot)\in \calH,\; \forall x\in \calX$;_
+2. _$\span\\{\phi(x): x\in \mathcal{X}\\}$ is dense in $\calH$; and_
+3. _$f(x) = \inner{\phi(x), f}\_{\calH}\; \forall f\in\calH,\, x\in\calX$._
 
 _Therefore, $\calH$ is the unique RKHS with reproducing kernel $k$, thus denoted by $H\_k$._
 
@@ -101,7 +101,7 @@ A direct consequence of Theorem 1 is that given any feature map $\phi(\cdot):\ca
 
 Finally, we end with a remark:
 
-**Remark 1.** _We can define a evaluation functional on $\calX$ that $k\_x\; s.t. \; k\_x(f) = f(x)$ for $f\in\calH$. Then we have that a Hilbert space is a RKHS iff linear operator $k\_x$ is continuous $\forall x\in \calX$. In addition, this implies all the functions in RKHS are continuous._
+**Remark.** _We can define a evaluation functional on $\calX$ that $k\_x\; s.t. \; k\_x(f) = f(x)$ for $f\in\calH$. Then we have that a Hilbert space is a RKHS iff linear operator $k\_x$ is continuous $\forall x\in \calX$. In addition, this implies all the functions in RKHS are continuous._
 _Proof._
 Here, we only prove for the necessary condition, see [2] for full details.
 
@@ -114,4 +114,4 @@ In fact, we will see in the following posts that apart from evaluation functiona
 <h2 class="section-heading">References</h2>
 
 1. Saitoh, S and Sawano, Y. Theory of reproducing kernels and applications. Springer, 2016.
-2. Harchaoui, Z, UW [STAT538 Lecture1 handout](docs/STAT538lec1.pdf). 2019.
+2. Harchaoui, Z. [STAT 538 Statistical Learning: Modeling, Prediction, And Computing, Lecture 2](../docs/STAT538lec2.pdf). University of Washington, 2019.

@@ -4,7 +4,7 @@ title:      "Part 2: Characterising RKHS with linear operators on Hilbert space"
 subtitle:   "In this article, we will see how an RKHS can be constructed by a linear operator on a Hilbert space, which has an important example linking probability and RKHS of stationary kernels, i.e. Bochner's Theorem. For the second part, we will see any complete orthogonal system (CONS) in a separable Hilbert space will give rise to a characterisation of RKHS."
 date:       2020-09-24 12:00
 author:     "edenx"
-tags: 		[kernel]
+tags: 		  [kernel, fundamentals of RKHS]
 category:   math
 ---
 
@@ -36,10 +36,10 @@ $$
 </div>
 Then we have the following theorem giving the construction of RKHS via $L$.
 
-**Theorem 2 (Thm 2.36, S.Saitoh 2016).** _With the definitions above, we have the following properties for the image space $\calR(L)$:
-1. $\calR(L)$ with the norm defined above is a Hilbert space;
-2. The function $k$ defined previously is unique and satisfies reproducing property;
-3. Assume $L$ is injective, then $L$ is an isometry from $(\calH, \inner{\cdot, \cdot}\_{\calH}$ to $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$ (_iff_ $\calH = \ker{L}^{\perp}$) _iff_ $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
+**Theorem 2 (Thm 2.36, S.Saitoh 2016).** _With the definitions above, we have the following properties for the image space $\calR(L)$:_
+1. _$\calR(L)$ with the norm defined above is a Hilbert space;_
+2. _The function $k$ defined previously is unique and satisfies reproducing property;_
+3. _Assume $L$ is injective, then $L$ is an isometry from $(\calH, \inner{\cdot, \cdot}\_{\calH}$ to $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$ (_iff_ $\calH = \ker{L}^{\perp}$) _iff_ $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
 
 _Proof._
 We first denote $\Pker:\calH \to \calR(L)$ as the orthogonal projection from $\calH$ to $\ker{L}^{\perp}$, where $\ker{L}$ is the null space of the linear mapping $L$ defined as
@@ -92,7 +92,7 @@ Notably, the last statement of Theorem 1 says that $L$ is an isometry between $\
 The most common function space that can be applied to the above formulation is $\calL^2$ space, which is also very important in Fourier analysis. In particular, we will see the following example connecting stationary kernels to the Fourier transform (which is linear and an isometry from $\calL^2$ to $\calL^2$) of non-negative Borel measures. This has many important applications, in particular for Gaussian Process, one reference I would pick for this is by Micheal Stein [3]; and of course the Random Fourier features (RFF) developed by the ML community for global approximation of Covariance function of a GP is also worth mentioning.
 
 **Example (Bochner's theorem, S.Bochner 1933).**
-For this example, we will not prove the theorem itself but provide with its consequences in representing a RKHS [1,2]. Here we present the version in [4].
+For this example, we will not prove the theorem itself but provide with its consequences in representing a RKHS [1, 2]. Here we present the version in [4].
 
 **Theorem 3 (H.Wendland 2004).** _A continuous function $h$ on $\calX=\R^d$ is positive definite iff there exists a finite non-negative Borel measure $\mu$ on $\R^d$ such that_
 <div>
@@ -195,5 +195,5 @@ Furthermore, [1] shows $T\_{H\_k}(f) = \sum\_{j=1}^{\infty} \inner{f,v\_j}\_{H\_
 <h2 class="section-heading">References</h2>
 1. Saitoh, S and Sawano, Y. Theory of reproducing kernels and applications. Springer, 2016.
 2. Hofmann T, Schölkopf B, Smola AJ. Kernel methods in machine learning. The annals of statistics. 2008 Jun 1:1171-220.
-3. Stein, Michael L. Interpolation of spatial data: some theory for kriging. Springer Science & Business Media, 2012.
+3. Stein, M. Interpolation of spatial data: some theory for kriging. Springer Science & Business Media, 2012.
 4. Wendland, H. Scattered data approximation. Vol.17. Cambridge university press, 2004.
