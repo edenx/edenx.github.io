@@ -68,7 +68,7 @@
       {% include ext-css.html css=css %}
     {% endfor %}
   {% endif %}
-  
+
   {% if page.css %}
     {% for css in page.css %}
       <link rel="stylesheet" href="{{ css | relative_url }}">
@@ -152,6 +152,9 @@
     },
     Macros: {
       '\\_': '_'
+    },
+    TeX: {
+      extensions: ["autobold.js"]
     },
     messageStyle: "none",
     "HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"] }
