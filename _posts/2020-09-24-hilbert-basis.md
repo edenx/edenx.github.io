@@ -20,7 +20,7 @@ Consider a feature map $\phi:\calX\to \calH$, then we define a linear operator $
 <div>
 $$
   L\mathbf{f} = \inner{\mathbf{f}, \phi(\cdot)}_{\calH}\; \forall \mathbf{f}\in \calH
-$$
+$$s
 </div>
 Moreover, we define the quadratic form
 <div>
@@ -82,9 +82,9 @@ $$
   \end{align}
 $$
 </div>
-where the second equality is due to Equation \ref{Eq:isometry}, the third equality is by the definiton of $L$. And the uniqueness of $k$ can be easily verified by considering $k(x,\cdot)$.
+where the second equality is due to Equation \eqref{Eq:isometry}, the third equality is by the definiton of $L$. And the uniqueness of $k$ can be easily verified by considering $k(x,\cdot)$.
 
-Finally, we have seen from Equation \ref{Eq:isometry}, $L|\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Then $L$ is isomorphic iff $\calH=\ker{L}^{\perp}$. Now, if $\bf\in\calH$ is perpendicular to all $\phi(x), x\in\calX$, then $\inner{f, \phi(x)}\_{\calH} = 0\;\forall x\in\calX$, with the injectivity of $L$, we must have $\bf\equiv 0$. Therefore, $\\{\phi(x): x\in\calX\\}$ spans a dense subspace of $\calH$.
+Finally, we have seen from Equation \eqref{Eq:isometry}, $L|\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Then $L$ is isomorphic iff $\calH=\ker{L}^{\perp}$. Now, if $\bf\in\calH$ is perpendicular to all $\phi(x), x\in\calX$, then $\inner{f, \phi(x)}\_{\calH} = 0\;\forall x\in\calX$, with the injectivity of $L$, we must have $\bf\equiv 0$. Therefore, $\\{\phi(x): x\in\calX\\}$ spans a dense subspace of $\calH$.
 
 Moreover, we know $\\{\phi(x): x\in\calX\\}\subset \ker{L}^{\perp}$, hence $\calH = \ker{L}^{\perp}$.
 <div style="text-align: right"> $\square$ </div>
