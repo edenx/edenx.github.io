@@ -16,7 +16,7 @@ In this article, we will see the characterisation of RKHS as a image space of a 
 In the article, we use $\calH$ to denote Hilbert space if without specification; and we use 'linear operator' and 'linear map' interchangeably. The theory can be easily extended to spaces of complex-valued functions, but we here only present the results with real-valued functions for simplicity.
 
 <h2 class="section-heading">RKHS via linear mappings</h2>
-Consider a feature map $\phi:\calX\to \calH$, then we define a linear operator $L:\calH\to \calF{\calX}$ from a Hilbert space $\calH$ on $\calX$ to the space of all real-valued functions on $\calX$, s.t.
+Consider a feature map $\phi:\calX\to \calH$, then we define a linear operator $L:\calH\to \calF(\calX)$ from a Hilbert space $\calH$ on $\calX$ to the space of all real-valued functions on $\calX$, s.t.
 <div>
 $$
   L\bf = \inner{\bf, \phi(\cdot)}_{\calH}\; \forall \bf\in \calH
@@ -31,21 +31,22 @@ $$
 which is a positive definite function as in [Part 1](2020-09-22-construction-of-RKHS.md). Then we denote by $\calR(L)$ the image space of $L$, which is a linear function space. In $\calR(L)$, consider the norm
 <div>
 $$
-  \norm{f}_{\calR(L)} \equiv \inf\\{\norm{\bf}_{\calH}: \bf\in\calH, f = L\bf\\},
+  \norm{f}_{\calR(L)} \equiv \inf\{\norm{\bf}_{\calH}: \bf\in\calH, f = L\bf\},
 $$
 </div>
 Then we have the following theorem giving the construction of RKHS via $L$.
+
 **Theorem 2 (Thm 2.36, S.Saitoh 2016).** _With the definitions above, we have the following properties for the image space $\calR(L)$:
 1. $\calR(L)$ with the norm defined above is a Hilbert space;
 2. The function $k$ defined previously is unique and satisfies reproducing property;
-3. Assume $L$ is injective, then $L$ is an isometry from $(\calH, \inner{\cdot, \cdot}\_{\calH}$ to $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$ (iff $\calH = \ker{L}^{\perp}$) iff $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
+3. Assume $L$ is injective, then $L$ is an isometry from $(\calH, \inner{\cdot, \cdot}\_{\calH}$ to $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$ (_iff_ $\calH = \ker{L}^{\perp}$) _iff_ $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
 
 _Proof._
 We first denote $\Pker:\calH \to \calR(L)$ as the orthogonal projection from $\calH$ to $\ker{L}^{\perp}$, where $\ker{L}$ is the null space of the linear mapping $L$ defined as
 <div>
 $$
-    \ker{L} \equiv \\{\bf\in\calH: L\bf=0\\}
-    = \cap_{x\in\calX}\\{\bf\in\calH:\inner{f, \phi(x)}_{\calH} = 0\\}
+    \ker{L} \equiv \{\bf\in\calH: L\bf=0\}
+    = \cap_{x\in\calX}\{\bf\in\calH:\inner{f, \phi(x)}_{\calH} = 0\}
 $$
 </div>
 This implies that $\ker{L}$ is a closed subspace of $\calH$, therefore for some $\bh\in\ker{L}$ and $f = L\bf$,
@@ -93,14 +94,15 @@ The most common function space that can be applied to the above formulation is $
 
 **Example (Bochner's theorem, S.Bochner 1933).**
 For this example, we will not prove the theorem itself but provide with its consequences in representing a RKHS [1,2]. Here we present the version in [4].
+
 **Theorem 3 (H.Wendland 2004).** _A continuous function $h$ on $\calX=\R^d$ is positive definite iff there exists a finite non-negative Borel measure $\mu$ on $\R^d$ such that_
 <div>
 $$
-  h(x) = \int_{\R^d} e^{-i\inner{x,\omega}\; d\mu(\omega)}
+  h(x) = \int_{\R^d} e^{-i\inner{x,\omega}\; d\mu(\omega)}.
 $$
 </div>
 
-Assume $\nu(\omega)$ is the non-vanishing density w.r.t $\mu$ and assume $L^2(\R^d)$ with uniform measure, by Theorem 3, we have
+Now, assume $\nu(\omega)$ is the non-vanishing density w.r.t $\mu$ and assume $L^2(\R^d)$ with uniform measure, by Theorem 3, we have
 <div>
 $$
   k(x,x') = \int e^{-i\inner{x-x', \omega}} \nu(\omega)\;d\omega
@@ -135,11 +137,10 @@ $$
 And clearly, the RKHS is given by
 <div>
 $$
-  H_k = \\{f\in \calL^2(\R^d):
-    \int_{\R^d} \frac{\abs{F(f)}^2}{\nu(\omega)}\;d\omega < +\infty\\}.
+  H_k = \{f\in \calL^2(\R^d):\int_{\R^d}\frac{\abs{F(f)}^2}{\nu(\omega)}\;d\omega < +\infty\}.
 $$
 </div>
-This representation of $H_k$ is also useful in defining/proving characteristic kernel, where informally, a characteristic kernel is a uniformly bounded PSD kernel that injectively maps a probability distribution $P$ to its mean element $\mu\_{P}$ (s.t. \E_{x\tilde P}[f(x)] = \inner{\mu\_P, f}\_{H_k). This is used in e.g. Maximum mean discrepancy for two samples test.
+This representation of $H\_k$ is also useful in defining/proving characteristic kernel, where informally, a characteristic kernel is a uniformly bounded PSD kernel that injectively maps a probability distribution $P$ to its mean element $\mu\_{P}$ (s.t. \E\_{x\tilde P}[f(x)] = \inner{\mu\_P, f}\_{H\_k). This is used in e.g. Maximum mean discrepancy for two samples test.
 
 <h2 class="section-heading">Characterising RKHS via CONS of separable Hilbert space</h2>
 Finally, we will see how a RKHS may be represented by any Complete orthogonal system (CONS) of separable Hilbert space.
@@ -159,33 +160,34 @@ $$
 $$
 </div>
 In addition, we can equivalently define the kernel $k$ as
-$$
-  \begin{align}
-    k(x, y) &= \inner{\phi(x), \phi(y)}_{\calH} \\
-    &= \sum_{j=1}^{\infty} \inner{\phi(x), V_j}\inner{\phi(y), V_j}\\
-    &= \sum_{j=1}^{\infty} v_j(x)v_j(y)
-  \end{align}
-$$
+
+\begin{align}
+  k(x, y) &= \inner{\phi(x), \phi(y)}_{\calH} \\\\
+  &= \sum_{j=1}^{\infty} \inner{\phi(x), V_j}\inner{\phi(y), V_j}\\\\
+  &= \sum_{j=1}^{\infty} v_j(x)v_j(y)
+\end{align}
+
 again by Parseval's identity.
 
 With the above setup, we are now ready to give an alternative characterisation of RKHS [1],
-**Theorem 4 (Thm 2.25, S.Saitoh 2016).** _Assume $L$ is injective and $\Span\\{\phi(x): x\in\calX\\}$ is dense in $\calH$, then the RKHS in Theorem 1 can be formulated as_
+
+**Theorem 4 (Thm 2.25, S.Saitoh 2016).** _Assume $L$ is injective and $\span\\{\phi(x): x\in\calX\\}$ is dense in $\calH$, then the RKHS in Theorem 1 can be formulated as_
 <div>
-$$
-  H_k = \left\\{f\in\calH:
-  f=\sum_{j=1}^{\infty}a_jv_j:
-  \\{a_j\\}_{j=1}^{\infty} \in \ell^2(\N)
-  \right\\}
+$$  
+  H_k = \left\{f\in\calH:
+  f=\sum_{j=1}^{\infty}a_j v_j:
+  \{a_j\}_{j=1}^{\infty} \in \ell^2(\N)
+  \right\}
 $$
 </div>
 _with norm_
 <div>
 $$
-  \nrom{f}_{H_k} =
+  \norm{f}_{H_k} =
   \norm{\sum_{j=1}^{\infty}a_jv_j}_{H_k} = \sqrt{\sum_{j=1}^{\infty} \abs{a_j}^2}
 $$
 </div>
-From Theorem 4, it is clear that $\\{v\_j\\}\_{j=1}^{\infty}$ is dense in $H\_k$, moreover, as $L$ is injective, we have $\inner{v\_i, v\_j}\_{H\_k} = \inner{LV\_i, LV\_j}\_{H\_k} = \inner{V\_i, V\_j}\_{\calH} = 0$. Therefore $v\_i\perp v\_j$, i.e. $\\{v\_j\\}\_{j=1}^{\infty}$ is a CONS in the RKHS $H\_k$.
+From Theorem 4, it is clear that $\\{v\_j\\}\_{j=1}^{\infty}$ is dense in $H\_k$, moreover, as $L$ is injective, we have $\inner{v\_i, v\_j}\_{H\_k} = \inner{LV\_i, LV\_j}\_{H\_k} = \inner{V\_i, V\_j}\_{\calH} = 0$. Therefore $v\_i\perp v\_j$, _i.e._ $\\{v\_j\\}\_{j=1}^{\infty}$ is a CONS in the RKHS $H\_k$.
 
 Furthermore, [1] shows $T\_{H\_k}(f) = \sum\_{j=1}^{\infty} \inner{f,v\_j}\_{H\_k}V\_j$ is an isometry from $H\_k$ to $\calH$, i.e. $\norm{f}\_{H\_k} = \norm{T\_{H\_k}(f)}\_{\calH}$ regardless of the injectivity of $L$. This gives a nice correspondence between the RKHS and the Hilbert space for general linear operator $L$, however, this does depend on the choice of CONS, and it is not useful in analysing the smoothing property of the RKHS. We will see why and how the norm of RKHS induces smoothing condition on the space in the next post on Mercer's theorem, and the spectral perspective of RKHS via Hilbert-Schmidt Integral operator (which is defined irrespective of the choice of CONS).
 
