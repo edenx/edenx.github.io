@@ -19,7 +19,7 @@ In the article, we use $\calH$ to denote Hilbert space if without specification;
 Consider a feature map $\phi:\calX\to \calH$, then we define a linear operator $L:\calH\to \calF(\calX)$ from a Hilbert space $\calH$ on $\calX$ to the space of all real-valued functions on $\calX$, s.t.
 <div>
 $$
-  L\mathbf{f} = \inner{\mathbf{f}, \phi(\cdot)}_{\calH}\; \forall \mathbf{f}\in \calH
+  L\bf = \inner{\bf, \phi(\cdot)}_{\calH}\; \forall \bf\in \calH
 $$
 </div>
 Moreover, we define the quadratic form
