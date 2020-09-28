@@ -116,7 +116,6 @@ $$
 $$
 </div>
 Then the Fourier transform of $k(x,x')$ is
-<div>
 $$
   \begin{align*}
     \calF(k(x,\cdot))(\omega)
@@ -125,7 +124,6 @@ $$
     &= (2\pi)^{-d/2}\nu(\omega)e^{-i\inner{x, \omega}}
   \end{align*}
 $$
-</div>
 Substuting back the expression of $e^{-i\inner{x, \omega}}$ in terms of $\calF(k(x,\cdot))(\omega)$ into the kernel gives the following form of $k$
 <div>
 $$
@@ -139,7 +137,7 @@ $$
   H_k = \{f\in \calL^2(\R^d):\int_{\R^d}\frac{\abs{F(f)}^2}{\nu(\omega)}\;d\omega < +\infty\}.
 $$
 </div>
-This representation of $H\_k$ is also useful in defining/proving characteristic kernel, where informally, a characteristic kernel is a uniformly bounded PSD kernel that injectively maps a probability distribution $P$ to its mean element $\mu\_{P}$ (s.t. \E\_{x\tilde P}[f(x)] = \inner{\mu\_P, f}\_{H\_k). This is used in e.g. Maximum mean discrepancy for two samples test.
+This representation of $H\_k$ is also useful in defining/proving characteristic kernel, where informally, a characteristic kernel is a uniformly bounded PSD kernel that injectively maps a probability distribution $P$ to its mean element $\mu\_{P}$ (s.t. \E\_{x\sim P}[f(x)] = \inner{\mu\_P, f}\_{H\_k). This is used in e.g. Maximum mean discrepancy for two samples test.
 
 <h2 class="section-heading">Characterising RKHS via CONS of separable Hilbert space</h2>
 Finally, we will see how a RKHS may be represented by any Complete orthogonal system (CONS) of separable Hilbert space.
