@@ -30,7 +30,7 @@ round-avatar: true
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
 # title-img: "/assets/img/avatar-icon.png"
-baseurl: /project-name
+# baseurl: /project-name
 
 
 # --- Footer social media links --- #
