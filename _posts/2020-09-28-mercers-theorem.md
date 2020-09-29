@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Part 3: Mercer's theorem and the spectral perspective of RKHS"
-subtitle:   "In this article, we provide another formulation of RKHS in terms of the spectrum of the Integral operator corresponding to a reproducing kernel, which is given by Mercer's Theorem and the property of Compact operators in separable Hilbert space."
+subtitle:   "In this article, we provide another formulation of RKHS in terms of the spectrum of the Integral operator corresponding to a reproducing kernel, which is given by Mercer's Theorem and the property of compact self-adjoint operators on separable Hilbert space."
 date:       2020-09-28 16:40
 author:     "edenx"
 tags: 		  [kernel, fundamentals of RKHS]
