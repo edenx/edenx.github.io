@@ -3,7 +3,7 @@ layout:     post
 title:      "Part 2: Characterising RKHS with linear operators on Hilbert space"
 subtitle:   "In this article, we will see how an RKHS can be constructed by a linear operator on a Hilbert space, which has an important example linking probability and RKHS of stationary kernels, i.e. Bochner's Theorem. For the second part, we will see any complete orthogonal system (CONS) in a separable Hilbert space will give rise to a characterisation of RKHS."
 date:       2020-09-24 12:00
-author:     "edenx"
+author:     "Eden"
 tags: 		  [kernel, fundamentals of RKHS]
 category:   math
 ---

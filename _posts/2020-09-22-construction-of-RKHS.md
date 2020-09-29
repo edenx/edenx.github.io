@@ -4,7 +4,7 @@ title:      "Part 1: Reproducing Kernels and Construction of RKHS"
 subtitle:   "This is the first post of a three-part series on fundamentals of RKHS, which mainly serves as a way to reorganise my understandings of RKHS (in Functional analysis) and kernel methods (in Machine learning) and try to connect the properties of RKHS to its applications in ML."
 thumbnail-img: ""
 date:       2020-09-22 10:00
-author:     "edenx"
+author:     "Eden"
 tags: 		[kernel, fundamentals of RKHS]
 category:   math
 ---
