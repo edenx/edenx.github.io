@@ -114,4 +114,4 @@ In fact, we will see in the following posts that apart from evaluation functiona
 <h2 class="section-heading">References</h2>
 
 1. Saitoh, S and Sawano, Y. Theory of reproducing kernels and applications. Springer, 2016.
-2. Harchaoui, Z. STAT 538 Statistical Learning: Modeling, Prediction, And Computing, [Lecture 2](docs/STAT538lec2.pdf). University of Washington, 2019.
+2. Harchaoui, Z. STAT 538 Statistical Learning: Modeling, Prediction, And Computing, [Lecture 2]({{ site.baseurl }}{{ "docs/stat538lec2" }}). University of Washington, 2019.
