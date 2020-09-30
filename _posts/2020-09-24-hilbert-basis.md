@@ -39,7 +39,7 @@ Then we have the following theorem giving the construction of RKHS via $L$.
 **Theorem 2 (Thm 2.36, S.Saitoh 2016).** _With the definitions above, we have the following properties for the image space $\calR(L)$:_
 1. _$\calR(L)$ with the norm defined above is a Hilbert space;_
 2. _The function $k$ defined previously is unique and satisfies reproducing property;_
-3. _Assume $L$ is injective, then $L$ is an isometry from $(\calH, \inner{\cdot, \cdot}\_{\calH}$ to $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$ (_iff_ $\calH = \ker{L}^{\perp}$) _iff_ $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
+3. _Assume $L$ is injective, then $L$ is an isometry from $(\calH, \inner{\cdot, \cdot}\_{\calH}$ to $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$ (iff $\calH = \ker{L}^{\perp}$) iff $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
 
 _Proof._
 We first denote $\Pker:\calH \to \calR(L)$ as the orthogonal projection from $\calH$ to $\ker{L}^{\perp}$, where $\ker{L}$ is the null space of the linear mapping $L$ defined as

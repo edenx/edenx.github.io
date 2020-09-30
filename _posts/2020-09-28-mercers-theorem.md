@@ -11,7 +11,7 @@ category:   math
 _**Disclaimer.** This post is served as a summarisation of my study notes on RKHS theory [1], and classes I took on relevant topics, containing theoratical details from [1, 2, 3] along with my interpretations directed by my personal interests on those topics. I am by no means an expert in functional analysis and spectral theory, so please feel free to point out any mistakes in the post.
 <br/><br/>_
 
-In this article, we assume that $\calX$ is a locally compact Hausdorff space equipped with a positive Borel measure $\mu$. Moreover, let $\calL^2(\mu)$ be the separable Hilbert space of real functions defined on $\calX$. We will mainly consider the spectral property of the integral operator for $k\in L^2(\calX\times\calX, \mu)$, which is defined as
+In this article, we assume that $\calX$ is a locally compact Hausdorff space equipped with a positive Borel measure $\mu$. Moreover, let $\calL^2(\calX, \mu)$ be the separable Hilbert space of real functions defined on $\calX$. We will mainly consider the spectral property of the integral operator for $k\in \calL^2(\calX\times\calX, \mu)$, which is defined as
 <div>
 $$
 \begin{align}
@@ -71,8 +71,9 @@ Since $k\in \calL^2(\calX\times\calX, \mu)$, the term on the RHS is bounded. The
 **Remark.** _Interestingly, for any HS operator $T$ on separable $\calL^2(\calX, \mu)$, there is a square integrable function $k\_T\in \calL^2(\calX\times\calX, \mu)$ such that $T$ can be written in the form of \eqref{Eq:HSIO} [4]._
 
 **Remark.** _We have seen in [Part 2](2020-09-24-hilbert-basis.md) that an RKHS can be characterised with any CONS of the separable Hilbert space $\calH$, however it is dependent on the choice for the basis. On the other hand, the norm of HS integral operator $K$ is specified irrespective of the CONS._
+
 _Proof (informal)._
-Consider any HS operator $T$ on $\calH$ with two sets of CONS $\\{\psi\_i\\}\_{i=1}^{\infty}$ and $\\{\varphi\_i\\}\_{i=1}^{\infty}$, then_
+Consider any HS operator $T$ on $\calH$ with two sets of CONS $\\{\psi\_i\\}\_{i=1}^{\infty}$ and $\\{\varphi\_i\\}\_{i=1}^{\infty}$, then
 <div>
 $$
 \begin{align*}
@@ -116,9 +117,9 @@ Finally, as a consequence of Theorem 6, we present the explicit expression of RK
 **Theorem 7 (Thm 18, K.Fukumizu 2010).** _Under the same notation, we have a RKHS with $k$ s.t._
 <div>
 $$
-  H_k = \{f\in\calL^2(\calX, \mu):
+  H_k = \left\{f\in\calL^2(\calX, \mu):
   f = \sum_i^{\infty} a_i \phi_i, \;
-  \norm{f}_{H_k}^2 = \sum_i^{\infty} \frac{\abs{a_i}^2}{\lambda_i}<\infty\},
+  \norm{f}_{H_k}^2 = \sum_i^{\infty} \frac{\abs{a_i}^2}{\lambda_i}<\infty\right\},
 $$
 </div>
 _and the inner product of RKHS is of the form_
