@@ -63,15 +63,15 @@ social-network-links:
 
 # If you want to show a link to an RSS in the footer, add the site description here.
 # If you don't want to show an RSS link, remove the following line.
-rss-description: This website is a virtual proof that I'm awesome
+# rss-description: This website is a virtual proof that I'm awesome
 
 # --- General options --- #
 # Select which social network share links to show in posts
 share-links-active:
   github: true
-#   facebook: true
-#   linkedin: true
-#   vk: false
+  facebook: true
+  linkedin: true
+  twitter: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50

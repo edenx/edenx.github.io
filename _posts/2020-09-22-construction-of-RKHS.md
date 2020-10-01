@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Part 1: Reproducing Kernels and Construction of RKHS"
-subtitle:   "This is the first post of a three-part series on fundamentals of RKHS, which mainly serves as a way to reorganise my understandings of RKHS (in Functional analysis) and kernel methods (in Machine learning) and try to connect the properties of RKHS to its applications in ML."
+subtitle:   "This is the first post of a four-part series on fundamentals of RKHS, which mainly serves as a way to reorganise my understandings of RKHS (in Functional analysis) and kernel methods (in Machine learning) and try to connect the properties of RKHS to its applications in ML."
 thumbnail-img: ""
 date:       2020-09-22 10:00
 author:     "Eden"
@@ -14,7 +14,7 @@ _**Disclaimer.** This post is served as a summarisation of my study notes on RKH
 
 With the nice properties of Reproducing Kernel Hilbert Space (RKHS), many important results in ML are analysed theoretically with linear operators on these spaces. To dig into the details, we shall first look into fundamental properties of kernels and RKHS, and how it can be constructed from various perspectives.
 
-To begin with, we give a concise introduction to the definitions and fundamental properties of reproducing kernels and RKHS, which many readers who know kernel methods are familiar with. The following two articles will be devoted to constructing a valid kernel (and its RKHS) from a Complete Orthogonal System (CONS) of a separable Hilbert Space moreover the eigen-decomposition of a linear operator on $\calL^2$.
+To begin with, we give a concise introduction to the definitions and fundamental properties of reproducing kernels and RKHS, which many readers who know kernel methods are familiar with. The following two articles will be devoted to constructing a valid kernel (and its RKHS) from a Complete Orthogonal System (CONS) of a separable Hilbert Space moreover the eigen-decomposition of an Integral operator on $\calL^2$. And finally, we will consider the Covariance operator corresponding to a reproducing kernel, and show its connection to the Integral operator via eigenvalues and eigenvectors.
 
 In the article, we use $\calH$ to denote Hilbert space if without specification; and we use 'linear operator' and 'linear map' interchangeably. The theory can be easily extended to spaces of complex-valued functions, but we here only present the results with real-valued functions for simplicity.
 
@@ -114,4 +114,4 @@ In fact, we will see in the following posts that apart from evaluation functiona
 <h2 class="section-heading">References</h2>
 
 1. Saitoh, S and Sawano, Y. Theory of reproducing kernels and applications. Springer, 2016.
-2. Harchaoui, Z. STAT 538 Statistical Learning: Modeling, Prediction, And Computing, <a href="docs/STAT538lec2.pdf">Lecture 2</a>. University of Washington, 2019.
+2. Harchaoui, Z. STAT 538 Statistical Learning: Modeling, Prediction, And Computing, [Lecture 2](docs/stat538lec2.pdf). University of Washington, 2019.

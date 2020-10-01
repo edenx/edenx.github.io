@@ -15,11 +15,11 @@ In this article, we assume that $\calX$ is a locally compact Hausdorff space equ
 <div>
 $$
 \begin{align}
-  K(f)(x) = \int_{\calX} f(x)k(x,y)\;d\mu(x),\quad K: \calL^2(\calX) \to \calL^2(\calX),\label{Eq:HSIO}
+  \calK (f)(t) = \int_{\calX} f(x)k(x,y)\;d\mu(x),\quad \calK: \calL^2(\calX) \to \calL^2(\calX),\label{Eq:HSIO}
 \end{align}
 $$
 </div>
-where $K$ is a Hilbert-Schmidt integral operator (abbreviated as integral operator in the following) as will be seen in Section 2. For completeness, we first present a brief introduction to the spectral theory of compact self-adjoint operator on Hilbert space. Then we show that the spectral theory is also applicable to the integral operator $K$ in our case. In the end, we will see how Mercer's theorem bridges spectral theory and RKHS, and finally its implication in ML.
+where $\calK$ is a Hilbert-Schmidt integral operator (abbreviated as integral operator in the following) as will be seen in Section 2. For completeness, we first present a brief introduction to the spectral theory of compact self-adjoint operator on Hilbert space. Then we show that the spectral theory is also applicable to the integral operator $\calK$ in our case. In the end, we will see how Mercer's theorem bridges spectral theory and RKHS, and finally its implication in ML.
 
 <h2 class="section-heading">Spectral theorem in Hilbert space</h2>
 
@@ -35,12 +35,13 @@ Now, we are ready to present the spectral theorem for compact operators in separ
 
 **Theorem 5 (Thm 6.27, M.Einsiedler 2017).** _Let $\calH$ be a separable Hilbert space, and $T$ a compact self-adjoint operator on $\calH$. Then there exists a sequence of real eigenvalues $\\{\lambda\_n\\}\_n$ with $\abs{\lambda\_n}\to 0$ as $n\to\infty$; and an orthonormal basis $\\{v\_n\\}\_n$ of eigenvectors with $A v\_n = \lambda\_n v\_n\; \forall n\geq 1$._
 
-It follows directly that such $T$ is diagonalisable, and each non-zero eigenvalue has finite-multiplicity. In Section 2, we will see that an integral operator $K$ defined in \eqref{Eq:HSIO} is indeed compact.
+It follows directly that such $T$ is diagonalisable, and each non-zero eigenvalue has finite-multiplicity. In Section 2, we will see that an integral operator $\calK$ defined in \eqref{Eq:HSIO} is indeed compact.
 
 <h2 class="section-heading">Mercer expansion of integral operator</h2>
-We first show the $K$ is Hilbert-Schmidt (HS).
+We first show the $\calK$ is Hilbert-Schmidt (HS).
 
-**Lemma 1.** _Operator $K$ defined in \eqref{Eq:HSIO} is Hilbert-Schmidt._
+**Lemma 1.** _Operator $\calK$ defined in \eqref{Eq:HSIO} is Hilbert-Schmidt._
+
 _Proof._
 Recall that an operator $T$ on a separable Hilbert space is HS if for any Complete orthogonal system (CONS) $\\{\psi\_i\\}\_{i=1}^{\infty}$, we have the following
 <div>
@@ -48,7 +49,7 @@ $$
   \norm{T}_{HS}^2 = \sum_{i=1}^{\infty}\norm{T\psi_i}^2 < \infty.
 $$
 </div>
-Therefore, by Parseval's identity we have $k(x,\cdot) = \sum\_i \inner{k(x,\cdot), \psi\_i}\_{\calL^2} \psi\_i$, then
+Since $k\in \calL^2(\calX\times\calX, \mu)$ then we have $k(x,\cdot) = \sum\_i \inner{k(x,\cdot), \psi\_i}\_{\calL^2} \psi\_i$, and
 <div>
 $$
   \begin{align*}
@@ -56,21 +57,21 @@ $$
     &= \inner{k(x, \cdot), k(x, \cdot)}_{\calL^2}\\
     &= \sum_{i=1}^{\infty}\abs{\inner{k(x,\cdot), \psi_i}_{\calL^2}}^2 \\
     &=\sum_{i=1} \abs{\int k(x,y)\psi_i(y) \;dy}^2\\
-    &=\sum_{i=1} \abs{K(\psi_i)(x)},
+    &=\sum_{i=1} \abs{\calK (\psi_i)(x)},
   \end{align*}
 $$
 </div>
 then integrate w.r.t $x$ gives
 <div>
 $$
-  \int\int \abs{k(x,y)}^2 \;dydx  = \sum_i \norm{K\psi_i}_{\calL^2}^2 = \norm{K}_{HS}^2.
+  \int\int \abs{k(x,y)}^2 \;dydx  = \sum_i \norm{\calK\psi_i}_{\calL^2}^2 = \norm{\calK}_{HS}^2.
 $$
 </div>
-Since $k\in \calL^2(\calX\times\calX, \mu)$, the term on the RHS is bounded. Then we complete the proof.
+Since $k\in \calL^2(\calX\times\calX, \mu)$, the term on the LHS is bounded. Then we complete the proof.
 <div style="text-align: right"> $\square$ </div>
-**Remark.** _Interestingly, for any HS operator $T$ on separable $\calL^2(\calX, \mu)$, there is a square integrable function $k\_T\in \calL^2(\calX\times\calX, \mu)$ such that $T$ can be written in the form of \eqref{Eq:HSIO} [4]._
+**Remark.** _Interestingly, for any HS operator $T$ on separable $\calL^2(\calX, \mu)$, there is a square integrable function $k\_T\in \calL^2(\calX\times\calX, \mu)$ such that $T$ can be written in the form of \eqref{Eq:HSIO} [3]._
 
-**Remark.** _We have seen in [Part 2](2020-09-24-hilbert-basis.md) that an RKHS can be characterised with any CONS of the separable Hilbert space $\calH$, however it is dependent on the choice for the basis. On the other hand, the norm of HS integral operator $K$ is specified irrespective of the CONS._
+**Remark.** _We have seen in [Part 2](2020-09-24-hilbert-basis.md) that an RKHS can be characterised with any CONS of the separable Hilbert space $\calH$, however it is dependent on the choice for the basis. On the other hand, the norm of HS integral operator $\calK$ is specified irrespective of the CONS._
 
 _Proof (informal)._
 Consider any HS operator $T$ on $\calH$ with two sets of CONS $\\{\psi\_i\\}\_{i=1}^{\infty}$ and $\\{\varphi\_i\\}\_{i=1}^{\infty}$, then
@@ -98,15 +99,15 @@ $$
 </div>
 _for $\nu$-almost everywhere $y\in\calY$ defines a compact operator._
 
-In addition, $T\_k$ in Proposition 1 is also continuous thus bounded [3], and it is self-adjoint as long as $k(x,y) = k(y,x)$ (which is automatically satisfied if $k$ is a real-valued PSD kernel). Clearly, Proposition 1 applies to our integral operator $K\in L^2(\calX\times\calX, \mu)$; with the assumption that $\calL^2$ is a separable Hilbert space, $K$ admits a set of non-zero eigenvalues $\\{\lambda\_j\\}\_j$ and eigenvectors $\\{\phi\_j\\}\_j$. Moreover, by the property of HS operator, we have that $K = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, which can be seen as a generalisation to eigen-decomposition for Hermitian matrices [3].
+In addition, $T\_k$ in Proposition 1 is also continuous thus bounded [3], and it is self-adjoint as long as $k(x,y) = k(y,x)$ (which is automatically satisfied if $k$ is a real-valued PSD kernel). Clearly, Proposition 1 applies to our integral operator $\calK\in L^2(\calX\times\calX, \mu)$; with the assumption that $\calL^2$ is a separable Hilbert space, $\calK$ admits a set of non-zero eigenvalues $\\{\lambda\_j\\}\_j$ and eigenvectors $\\{\phi\_j\\}\_j$. Moreover, by the property of HS operator, we have that $\calK = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, which can be seen as a generalisation to eigen-decomposition for Hermitian matrices [3].
 
-Finally, Theorem 6 says that for positive definite quadratic form (condition 2 in Theorem 6), operator $K$ has positive eigenvalues. We present here a modification of Mercer's theorem in [1] to accommodate the setting given in the beginning, however, it can be shown to apply to a more general scenario.
+Finally, Theorem 6 says that for positive definite quadratic form (condition 2 in Theorem 6), operator $\calK$ has positive eigenvalues. We present here a modification of Mercer's theorem in [1] to accommodate the setting given in the beginning, however, it can be shown to apply to a more general scenario.
 
 **Theorem 6 (Mercer's theorem, S.Saitoh 2016).** _For $\mu$ and $\calX$ defined previously, assume $k$ satisfies the following assumptions:_
 1. _$k(x,y) = k(y,x)\;\forall x,y\in\supp{\mu}$;_
 2. $\int\int\_{\calX\times\calX} k(x,y)f(x)f(y)\;d\mu(y) \geq 0, \;\forall f\in\calL^2(\calX, \mu).$
 
-_Then $K$ admits a set of positive eigenvalues and corresponding orthonomorl eigenfunctions, where $K = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, where the convergence is absolute and uniform on $\supp{\mu\times\mu}$._
+_Then $\calK$ admits a set of positive eigenvalues and corresponding orthonomorl eigenfunctions, where $\calK = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, where the convergence is absolute and uniform on $\supp{\mu\times\mu}$._
 
 Since condition 2 is equivalent to the definition of positive definite quadratic form, Mercer's theorem is generally applicable to all reproducing kernels in [Part 1](2020-09-22-construction-of-RKHS.md).
 
@@ -119,7 +120,7 @@ Finally, as a consequence of Theorem 6, we present the explicit expression of RK
 $$
   H_k = \left\{f\in\calL^2(\calX, \mu):
   f = \sum_i^{\infty} a_i \phi_i, \;
-  \norm{f}_{H_k}^2 = \sum_i^{\infty} \frac{\abs{a_i}^2}{\lambda_i}<\infty\right\},
+  \left(\frac{\abs{a_i}^2}{\lambda_i}\right)\in\ell^2\right\},
 $$
 </div>
 _and the inner product of RKHS is of the form_
@@ -136,9 +137,18 @@ $$
   \inner{f, k(x,\cdot)}_{H_k} = \sum_i^{\infty} \frac{\lambda_i^2 \phi_i(x)}{\lambda_i} = f(x).
 $$
 </div>
-Finally, we end the article with a remark on the implication of this expression of RKHS [4].
+Finally, we end the article with a remark on the implication of this expression of RKHS.
 
-**Remark.** _We can observe that dividing each element of $\ell^2$ inner product by $\lambda\_i$ gives $\inner{\cdot, \cdot}\_{H\_k}$. This in effect imposes a smoothness condition on $H\_k$, in the sense that for $f = \sum\_i^{\infty} a\_i \phi\_i$ to be in $H\_k$, $a\_i$ must go to zero fast enough so that $\norm{f}\_{H\_k} = \sum\_i^{\infty} a\_i^2/\lambda\_i <\infty$._
+**Remark.** _We can observe that dividing each element of $\ell^2$ inner product by $\lambda\_i$ gives $\inner{\cdot, \cdot}\_{H\_k}$. So we have an isomorphism between Hilbert spaces as followed,_
+<div>
+$$
+  \begin{align*}
+  \calK: \calL^2(\calX, \mu) &\to H_k\\
+      \sum_i a_i\phi_i &\mapsto \sum_i a_i\sqrt{\lambda_i}\phi_i.
+  \end{align*}
+$$
+</div>
+_This in effect imposes a smoothness condition on $H\_k$ (in comparison to $\calL^2$), in the sense that for $f = \sum\_i^{\infty} a\_i \phi\_i$ to be in $H\_k$, $a\_i$ must go to zero fast enough so that $\norm{f}\_{H\_k} = \sum\_i^{\infty} a\_i^2/\lambda\_i <\infty$ [4]._
 
 <h2 class="section-heading">References</h2>
 

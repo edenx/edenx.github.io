@@ -11,7 +11,7 @@ category:   math
 _**Disclaimer.** This post is served as a summarisation of my study notes on RKHS theory [1], and classes I took on relevant topics, containing theoretical details from [1, 2] along with my interpretations directed by my personal interests on those topics. I am by no means an expert in functional analysis and spectral theory, so please feel free to point out any mistakes in the post.
 <br/><br/>_
 
-In this article, we will see the characterisation of RKHS as a image space of a linear operator associated with a feature map $\phi: \calX\to\calH$ on a (separable) Hilbert space $\calH$. The construction of the reproducing kernel from $\phi$ is obvious as shown in [Part 1](2020-09-22-construction-of-RKHS.md), however, what is more worthy of presenting is the direct construction of RKHS from a Hilbert space via the linear operator itself. We will show why this view is useful in practice via an import example, which is the Bochner's theorem. For Section 2, we will characterise RKHS with any CONS of the separable Hilbert space $\calH$.
+In this article, we will see the characterisation of RKHS as an image space of a linear operator associated with a feature map $\phi: \calX\to\calH$ on a (separable) Hilbert space $\calH$. The construction of the reproducing kernel from $\phi$ is obvious as shown in [Part 1](2020-09-22-construction-of-RKHS.md), however, what is more worthy of presenting is the direct construction of RKHS from a Hilbert space via the linear operator itself. We will show why this view is useful in practice via an import example, which is the Bochner's theorem. For Section 2, we will characterise RKHS with any CONS of the separable Hilbert space $\calH$.
 
 In the article, we use $\calH$ to denote Hilbert space if without specification; and we use 'linear operator' and 'linear map' interchangeably. The theory can be easily extended to spaces of complex-valued functions, but we here only present the results with real-valued functions for simplicity.
 
@@ -39,7 +39,9 @@ Then we have the following theorem giving the construction of RKHS via $L$.
 **Theorem 2 (Thm 2.36, S.Saitoh 2016).** _With the definitions above, we have the following properties for the image space $\calR(L)$:_
 1. _$\calR(L)$ with the norm defined above is a Hilbert space;_
 2. _The function $k$ defined previously is unique and satisfies reproducing property;_
-3. _Assume $L$ is injective, then $L$ is an isometry from $(\calH, \inner{\cdot, \cdot}\_{\calH}$ to $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$ (iff $\calH = \ker{L}^{\perp}$) iff $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
+3. _Assume $L$ is injective, then $L$ is an isometry from ($\calH, \inner{\cdot, \cdot}\_{\calH}$) to ($\calR(L), \inner{\cdot, \cdot}\_{\calR(L)}$)
+**iff** $\calH = \ker{L}^{\perp}$  
+**iff** $\span\\{\phi(x):x\in\calX\\}$ is a dense subspace of $\calH$._
 
 _Proof._
 We first denote $\Pker:\calH \to \calR(L)$ as the orthogonal projection from $\calH$ to $\ker{L}^{\perp}$, where $\ker{L}$ is the null space of the linear mapping $L$ defined as
@@ -83,7 +85,7 @@ $$
 </div>
 where the second equality is due to Equation \eqref{Eq:isometry}, the third equality is by the definiton of $L$. And the uniqueness of $k$ can be easily verified by considering $k(x,\cdot)$.
 
-Finally, we have seen from Equation \eqref{Eq:isometry}, $L\vert\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Then $L$ is isomorphic iff $\calH=\ker{L}^{\perp}$. Now, if $\mathbf{f}\in\calH$ is perpendicular to all $\phi(x), x\in\calX$, then $\inner{f, \phi(x)}\_{\calH} = 0\;\forall x\in\calX$, with the injectivity of $L$, we must have $\mathbf{f}\equiv 0$. Therefore, $\\{\phi(x): x\in\calX\\}$ spans a dense subspace of $\calH$.
+Finally, we have seen from Equation \eqref{Eq:isometry}, $L\vert\_{\ker{L}^{\perp}}$ is an isometry between $(\ker{L}^{\perp}, \inner{\cdot, \cdot}\_{\calH})$ and $(\calR(L), \inner{\cdot, \cdot}\_{\calR(L)})$. Then $L$ is isometric iff $\calH=\ker{L}^{\perp}$. Now, if $\mathbf{f}\in\calH$ is perpendicular to all $\phi(x), x\in\calX$, then $\inner{f, \phi(x)}\_{\calH} = 0\;\forall x\in\calX$, with the injectivity of $L$, we must have $\mathbf{f}\equiv 0$. Therefore, $\\{\phi(x): x\in\calX\\}$ spans a dense subspace of $\calH$.
 
 Moreover, we know $\\{\phi(x): x\in\calX\\}\subset \ker{L}^{\perp}$, hence $\calH = \ker{L}^{\perp}$.
 <div style="text-align: right"> $\square$ </div>
