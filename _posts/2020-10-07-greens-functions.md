@@ -150,7 +150,7 @@ $$
 </div>
 The operator $L$ is sometimes called the regularisation operator [3,4,5].
 
-<h2 class="section-heading">Extension to discrete graphs</h2>
+<h2 class="section-heading">Extension to discrete Green's functions</h2>
 
 One natural extension of the above discussion is to discrete differential systems, e.g. combinatorial games, diffusion process on graph etc., which are important problems in combinatorics.
 
@@ -199,21 +199,12 @@ analogous to the continuous case. For more detailed discussions on discrete diff
 <h2 class="section-heading">References</h2>
 
 1. Nachman Aronszajn and Kennan Taylor Smith. Characterization of positive reproducing kernels.applications to green’s functions. American Journal of Mathematics, 79(3):611–622, 1957.
-
 2. De Vito E, Mücke N, Rosasco L. Reproducing kernel Hilbert spaces on manifolds: Sobolev and Diffusion spaces. arXiv preprint. arXiv:1905.10913. 2019.
-
 3. Alex J Smola, Bernhard Schölkopf, and Klaus-Robert Müller. The connection between regularization operators and support vector kernels.Neural networks, 11(4):637–649, 1998.
-
 4. Alexander J Smola and Risi Kondor. Kernels and regularization on graphs. In Learning theory and kernel machines, pages 144–158. Springer, 2003.
-
 5. Belkin M, Niyogi P, Sindhwani V. Manifold regularization: A geometric framework for learning from labeled and unlabeled examples. Journal of machine learning research. 2006;7(Nov):2399-434.
-
 6. Borovitskiy V, Terenin A, Mostowsky P, Deisenroth MP. Matern Gaussian processes on Riemannian manifolds. arXiv preprint arXiv:2006.10160. 2020 Jun 17.
-
 7. Chung F, Yau ST. Discrete Green's functions. Journal of Combinatorial Theory, Series A. 2000 Jul 1;91(1-2):191-214.
-
 8. De Vito E, Mücke N, Rosasco L. Reproducing kernel Hilbert spaces on manifolds: Sobolev and Diffusion spaces. arXiv preprint arXiv:1905.10913. 2019 May 27.
-
 9. Canzani Y. Analysis on manifolds via the Laplacian. [Lecture Notes](http://www.math.harvard.edu/canzani/docs/Laplacian.pdf). 2013.
-
 10. Saitoh, S and Sawano, Y. Theory of reproducing kernels and applications. Springer, 2016.
