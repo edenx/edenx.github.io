@@ -12,9 +12,11 @@ Before the main content, just for my interest in graphs and Laplace operators (w
 
 <h2 class="section-heading">Spectral properties of Laplace operator, and its connection to RKHS</h2>
 
-The purpose of this section is to provide with some solid examples on the connections between RKHS and Elliptical operators, in second order differential system in particular. Although the results can be extended to more complex geometry, we only focus on the Euclidean space $\R^d$ for simplicity.
+The aim of this section is to provide with some solid examples on the connections between RKHS and Elliptical operators. Although the results can be extended to more complex geometry, we only focus on the Euclidean space $\R^d$ for simplicity.
 
 We first give an overview of the spectral property of Dirichlet Laplace operator in Euclidean space, and how it allows the construction of a RKHS. Then, we will take a look at the heat equation on Euclidean space (as a special example of compact Riemannian manifold), which induces the famous Diffusion semi-group that has been a topic of great interest in Harmonic analysis and Manifold learning.
+
+Finally, some intuitive introduction to the general theory that connects the Green's functions of differential systems to reproducing kernels is presented.
 
 <h3 class="section-heading">Example: Eigenvalue problem of Laplace operator in Euclidean space</h3>
 
