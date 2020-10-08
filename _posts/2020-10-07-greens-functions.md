@@ -55,12 +55,7 @@ $$
   \left(\frac{\abs{a_i}^2}{\lambda_i}\right)\in\ell^2\right\}
 $$
 </div>
-with inner product as
-<div>
-$$
-  \inner{f, g}_{H_{\Delta}} = \sum_i^{\infty} \frac{a_i b_i}{\lambda_i}.
-$$
-</div>
+with inner product as $\inner{f,g}\_{H\_{\Delta}} = \sum\_i^{\infty} \frac{a\_i b\_i}{\lambda\_i}$.
 
 <h3 class="section-heading">Example: Heat equation in Euclidean space</h3>
 
@@ -88,7 +83,7 @@ for any $f\in\calL^2(\R^d)$. Then $p$ satisfies the followings for $t>0$,
 1. $p(x,x',t) = p(x',x,t) > 0$;
 2. $\lim\_{t\to 0}p(x,x',t) = \delta(x-x')$;
 3. $\partder{p}{t} + \Delta p = 0$, since $\partder{}{t}e^{-t\Delta}f = -\Delta e^{-t\Delta}f$;
-4. Lastly, by setting the intial value function as $p(x'', x',s)$, it gives that
+4. Lastly, by setting the intial value function as $F(\cdot) = p(\cdot, x',s)$, it gives that
 <div>
 $$
   p(x,x',t+s) = \int_{\R^d} p(x,x'',t)p(x'', x',s)\;dx''
@@ -103,13 +98,7 @@ $$
   e^{-t\Delta} = \sum_i e^{-t\mu_i} \phi_i\otimes \phi_i
 $$
 </div>
-and also
-<div>
-$$
-  p(x,x',t) = \sum_i e^{-t\mu_i}\phi_i(x) \phi_i(x').
-$$
-</div>
-for $\\{\mu\\}\_i$ the eigenvalues and $\\{\phi\_i\\}\_i$ the eigenfunctions of $\Delta$, which consequently forms the Sturm-Liouville decomposition of $\calL^2(\R^d)$. Complete proof can be found in [9].
+with $p(x,x',t) = \sum\_i e^{-t\mu\_i}\phi\_i(x) \phi\_i(x')$, for $\\{\mu\\}\_i$ the eigenvalues and $\\{\phi\_i\\}\_i$ the eigenfunctions of $\Delta$, which consequently forms the Sturm-Liouville decomposition of $\calL^2(\R^d)$. Complete proof can be found in [9].
 
 **Remark.**_In fact, the above result holds for any compact Riemannian manifold [9]._
 
