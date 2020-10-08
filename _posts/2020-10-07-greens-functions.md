@@ -4,7 +4,7 @@ title:      "Green's function, RKHS and Regularisation"
 subtitle:   "With the spectral perspective of RKHS introduced previously, we now look at a special and important category of reproducing kernels, which is the Green's functions to positive systems of differential equations. We will have examples on the eigenvalue problem for Dirichlet Laplace operator; and also on the Heat equation in Euclidean space. An intuitive generalisation is then provided. Finally, we will discuss informally the extension to discrete differential system and RKHS defined by Hermitian matrices."
 date:       2020-10-07 20:00
 author:     "edenx"
-tags: 		[kernel, Lapalcian, Manifold]
+tags: 		[kernel, Lapalcian, PDE]
 category:   math
 ---
 
@@ -88,10 +88,10 @@ for any $f\in\calL^2(\R^d)$. Then $p$ satisfies the followings for $t>0$,
 1. $p(x,x',t) = p(x',x,t) > 0$;
 2. $\lim\_{t\to 0}p(x,x',t) = \delta(x-x')$;
 3. $\partder{p}{t} + \Delta p = 0$, since $\partder{}{t}e^{-t\Delta}f = -\Delta e^{-t\Delta}f$;
-4. Lastly,
+4. Lastly, by setting the intial value function as $p(x'', x',s)$, it gives that
 <div>
 $$
-  p(x,x',t+s) = \int_{\R^d} p(x,x",t)p(x", x',s)\;dx"
+  p(x,x',t+s) = \int_{\R^d} p(x,x'',t)p(x'', x',s)\;dx''
   \;\;\; t,s>0, x,x'\in\R^d.
 $$
 </div>
