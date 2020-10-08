@@ -99,7 +99,7 @@ For this example, we will not prove the theorem itself but provide with its cons
 **Theorem 3 (H.Wendland 2004).** _A continuous function $h$ on $\calX=\R^d$ is positive definite iff there exists a finite non-negative Borel measure $\mu$ on $\R^d$ such that_
 <div>
 $$
-  h(x) = \int_{\R^d} e^{-i\inner{x,\omega}\; d\mu(\omega)}.
+  h(x) = \int_{\R^d} e^{-i\inner{x,\omega}}\; d\mu(\omega)}.
 $$
 </div>
 

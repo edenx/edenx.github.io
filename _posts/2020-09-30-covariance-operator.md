@@ -205,6 +205,6 @@ Since much theory is quite involved, it would take much more time to read throug
 
 <h2 class="section-heading">References</h2>
 
-1. Harchaoui, Z. STAT 538 Statistical Learning: Modeling, Prediction, And Computing, [Lecture 6](docs/stat538lec6.pdf). University of Washington, 2019.
+1. Harchaoui, Z. STAT 538 Statistical Learning: Modeling, Prediction, And Computing, [Lecture 6](../stat538lec6.pdf). University of Washington, 2019.
 2. Lin J, Rudi A, Rosasco L, Cevher V. Optimal rates for spectral algorithms with least-squares regression over Hilbert spaces. Applied and Computational Harmonic Analysis. 2020 May 1;48(3):868-90.
 3. Gretton, A. [Notes on mean embeddings and covariance operators](http://www.gatsby.ucl.ac.uk/~gretton/coursefiles/lecture5_covarianceOperator.pdf). UCL, 2020 Jan.

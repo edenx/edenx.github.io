@@ -23,7 +23,7 @@ where $\calK$ is a Hilbert-Schmidt integral operator (abbreviated as integral op
 
 <h2 class="section-heading">Spectral theorem in Hilbert space</h2>
 
-The spectral theorem for finite dimensional Hermitian matrices (over $\R$) are of particular interest in Linear algebra, since its eigenvectors provide with an orthogonal basis, so that the linear map is diagonalisable. Compact operators in Hilbert space consisting of real functions may be viewed as an extension from the finite dimensional case for its spectral properties. We will see in this section, how we may obtain a CONS from a compact operator in $\calH$.
+The spectral theorem for finite dimensional Hermitian matrices (over $\R$) are of particular interest in Linear algebra, since its eigenfunctions provide with an orthogonal basis, so that the linear map is diagonalisable. Compact operators in Hilbert space consisting of real functions may be viewed as an extension from the finite dimensional case for its spectral properties. We will see in this section, how we may obtain a CONS from a compact operator in $\calH$.
 
 In the article, we use $\calH$ to denote separable Hilbert space if without specification; and we use 'linear operator' and 'linear map' interchangeably. The theory can be easily extended to spaces of complex-valued functions, but we here only present the results with real-valued functions for simplicity.
 
@@ -33,7 +33,7 @@ In the article, we use $\calH$ to denote separable Hilbert space if without spec
 
 Now, we are ready to present the spectral theorem for compact operators in separable Hilbert space $\calH$.
 
-**Theorem 5 (Thm 6.27, M.Einsiedler 2017).** _Let $\calH$ be a separable Hilbert space, and $T$ a compact self-adjoint operator on $\calH$. Then there exists a sequence of real eigenvalues $\\{\lambda\_n\\}\_n$ with $\abs{\lambda\_n}\to 0$ as $n\to\infty$; and an orthonormal basis $\\{v\_n\\}\_n$ of eigenvectors with $A v\_n = \lambda\_n v\_n\; \forall n\geq 1$._
+**Theorem 5 (Thm 6.27, M.Einsiedler 2017).** _Let $\calH$ be a separable Hilbert space, and $T$ a compact self-adjoint operator on $\calH$. Then there exists a sequence of real eigenvalues $\\{\lambda\_n\\}\_n$ with $\abs{\lambda\_n}\to 0$ as $n\to\infty$; and an orthonormal basis $\\{v\_n\\}\_n$ of eigenfunctions with $A v\_n = \lambda\_n v\_n\; \forall n\geq 1$._
 
 It follows directly that such $T$ is diagonalisable, and each non-zero eigenvalue has finite-multiplicity. In Section 2, we will see that an integral operator $\calK$ defined in \eqref{Eq:HSIO} is indeed compact.
 
@@ -99,7 +99,7 @@ $$
 </div>
 _for $\nu$-almost everywhere $y\in\calY$ defines a compact operator._
 
-In addition, $T\_k$ in Proposition 1 is also continuous thus bounded [3], and it is self-adjoint as long as $k(x,y) = k(y,x)$ (which is automatically satisfied if $k$ is a real-valued PSD kernel). Clearly, Proposition 1 applies to our integral operator $\calK\in L^2(\calX\times\calX, \mu)$; with the assumption that $\calL^2$ is a separable Hilbert space, $\calK$ admits a set of non-zero eigenvalues $\\{\lambda\_j\\}\_j$ and eigenvectors $\\{\phi\_j\\}\_j$. Moreover, by the property of HS operator, we have that $\calK = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, which can be seen as a generalisation to eigen-decomposition for Hermitian matrices [3].
+In addition, $T\_k$ in Proposition 1 is also continuous thus bounded [3], and it is self-adjoint as long as $k(x,y) = k(y,x)$ (which is automatically satisfied if $k$ is a real-valued PSD kernel). Clearly, Proposition 1 applies to our integral operator $\calK\in L^2(\calX\times\calX, \mu)$; with the assumption that $\calL^2$ is a separable Hilbert space, $\calK$ admits a set of non-zero eigenvalues $\\{\lambda\_j\\}\_j$ and eigenfunctions $\\{\phi\_j\\}\_j$. Moreover, by the property of HS operator, we have that $\calK = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, which can be seen as a generalisation to eigen-decomposition for Hermitian matrices [3].
 
 Finally, Theorem 6 says that for positive definite quadratic form (condition 2 in Theorem 6), operator $\calK$ has positive eigenvalues. We present here a modification of Mercer's theorem in [1] to accommodate the setting given in the beginning, however, it can be shown to apply to a more general scenario.
 
@@ -139,11 +139,11 @@ $$
 </div>
 Finally, we end the article with a remark on the implication of this expression of RKHS.
 
-**Remark.** _We can observe that dividing each element of $\ell^2$ inner product by $\lambda\_i$ gives $\inner{\cdot, \cdot}\_{H\_k}$. So we have an isomorphism between Hilbert spaces as followed,_
+**Remark.** _We can observe that dividing each element of $\ell^2$ inner product by $\lambda\_i$ gives $\inner{\cdot, \cdot}\_{H\_k}$. So we have an isomorphism between Hilbert spaces as followed, for $\calK = \calT\calT^{\ast}$ s.t._
 <div>
 $$
   \begin{align*}
-  \calK: \calL^2(\calX, \mu) &\to H_k\\
+  \calT^{\ast}: \calL^2(\calX, \mu) &\to H_k\\
       \sum_i a_i\phi_i &\mapsto \sum_i a_i\sqrt{\lambda_i}\phi_i.
   \end{align*}
 $$
