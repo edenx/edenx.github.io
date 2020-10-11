@@ -139,7 +139,7 @@ $$
 \norm{f}_{\calH} = \int_D |Lf(x)|^2 \;dx.
 $$
 </div>
-The operator $L$ is sometimes called the regularisation operator [3,4,5].
+The operator $L$ is also called the regularisation operator in [3,4,5].
 
 <h2 class="section-heading">Extension to discrete Green's functions</h2>
 
@@ -185,7 +185,9 @@ as the discrete version of Heat propagator, which is also the heat kernel satisf
 
 analogous to the continuous case. For more detailed discussions on discrete differential system, [7] is a very good reference.
 
-**Remark.** _We have seen in Part 3 that the compact self-adjoint positive operator $\calT$ is the infinite dimensional counterpart to the strictly positive definite Hermitian matrix $A$, which forms a valid RKHS. One intuitive way to see why it works is by considering the inner product defined by $\inner{v, w}\_A = \inner{Av, w}$ on $\R^d$ for $v, w\in \R^d$. Some kernels on graphs are constructed in this way, which can be found in [4]._
+**Remark.** _We have seen in Part 3 that the compact self-adjoint positive operator $\calT$ is the infinite dimensional counterpart to the strictly positive definite Hermitian matrix $A$, which forms a valid RKHS. One intuitive way to see why it works is by considering the inner product defined by $\inner{v, w}\_A = \inner{Av, w}$ on $\R^d$ for $v, w\in \R^d$._
+
+ It is also noted that, by the [holomorphic functional calculi](https://en.wikipedia.org/wiki/Holomorphic_functional_calculus), we are able to find the eigenvalues and eigenfunctions/vectors of $r(\Delta)$ or $r(L\_{norm})$, such that $r$ is a holomorphic function, e.g. polynomials and inverse functions (resolvent). Some kernels on graphs are constructed in this way, which can be found in [4].
 
 <h2 class="section-heading">References</h2>
 
