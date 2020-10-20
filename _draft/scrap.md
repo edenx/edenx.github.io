@@ -107,3 +107,27 @@ Nonetheless, with the view of Harmonic analysis, it seems straightforward to est
 
 Lastly, we briefly discuss the generalisation of differential problems we have seen previously to Riemannian manifold.
 Among the most important invention is the reproducing kernel for Sobolov spaces described in [8], which are used to formalise the reproducing kernel induced by the class of Diffusion operators on compact Riemannian manifold. This subsequently is used in the proof in [6] to show the class of Matern kernels on compact Riemannian manifold without boundary can be expressed via the eigenfunctions of $\Delta\_{LB}$, of similar spirit to Heat kernel.
+
+
+
+Another way of looking at GP is via a generalised Bayesian linear regression (BLR) and the property above. Consider a sample $\\{\mathbf{x}_i\\}_{i=1}^p \subset \calX^n$, and assume a projection $\mathbf{\phi}(\cdot) = (\phi_1(\cdot), \phi_2(\cdot), \dots, \phi_D(\cdot))$ such that $\mathbf{\phi}:\calX^n \to \calX^D$, e.g. $\mathbf{\phi}(x) = (1,x, x^2,\dots, x^D)$. Analogous to an usual (Bayesian) linear regression model, we have
+<div>
+$$
+  f(\mathbf{x}) = \mathbf{\phi}(\mathbf{x})^T \mathbf{w}, \;\; \mathbf{y} = f(\mathbf{x}) + \mathbf{\epsilon}
+$$
+</div>
+where we assume $\mathbf{\epsilon}\sim\calN(0, \sigma^2 I\_p)$ and a prior on the weights $\mathbf{w} \sim \calN(0, \Sigma\_p)$, for some positive semi-definite gram matrix $\Sigma\_p$. Then, it is easy to derive the posterior 
+
+## Discrete differential system
+For heat equation, we are able to construct similar expression as in Section 1, where we denote
+<div>
+$$
+  \calH_t = e^{-t L_{norm}}
+$$
+</div>
+as the discrete version of Heat propagator, which is also the heat kernel satisfying
+
+1. $\partder{}{t}\calH\_t f = -L\_{norm} \calH\_t f$;
+2. $\lim\_{t\to 0} \calH\_t = 0$,
+
+analogous to the continuous case.

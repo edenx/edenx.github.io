@@ -61,46 +61,46 @@ with inner product as $\inner{f,g}\_{H\_{\Delta}} = \sum\_i^{\infty} \frac{a\_i 
 
 <h3 class="section-heading">Example: Heat equation in Euclidean space</h3>
 
-Another well known example is the Heat equation, where $f:\R^d\times\R^d\times\R^+ \to \R$, then
+Another well known example is the Heat equation on a bounded domain $\Omega\subset\R^d$ with Dirichlet boundary condition, where $f:\Omega\times\Omega\times\R^+ \to \R$, then
 <div>
   $$
   \begin{align}
-    \partder{f}{t} = -\Delta f,\;\;\; f(\cdot,0) = F(\cdot)
+    \partder{f}{t} = -\Delta_D f,\;\;\; f(\cdot,0) = F(\cdot)
     \label{Eq:heat}
   \end{align}
   $$
 </div>
 for $F$ the initial value function.
-Further, we can show that a unique smooth quadratic form $p: \R^d\times\R^d\times\R^+ \to\R$ exists s.t.
+Further, we can show that a unique smooth quadratic form $p: \Omega\times\Omega\times\R^+ \to\R$ exists s.t.
 <div>
 $$
   \begin{align}
   \label{Eq:propagator}
-  e^{-t\Delta}f = \int_{\R^d} p(\cdot, y, t)f(y)\;dy
+  e^{-t\Delta_D}f = \int_{\Omega} p(\cdot, y, t)f(y)\;dy
   \end{align}
 $$
 </div>
-for any $f\in\calL^2(\R^d)$. Then $p$ satisfies the followings for $t>0$,
+for any $f\in\calL^2(\Omega)$. Then $p$ satisfies the followings for $t>0$,
 
 1. $p(x,x',t) = p(x',x,t) > 0$;
-2. $\lim\_{t\to 0}p(x,x',t) = \delta(x-x')$;
-3. $\partder{p}{t} + \Delta p = 0$, since $\partder{}{t}e^{-t\Delta}f = -\Delta e^{-t\Delta}f$;
+2. $\lim\_{t\to 0}p(x,x',t) = \delta_(x-x')$;
+3. $\partder{p}{t} + \Delta_D p = 0$, since $\partder{}{t}e^{-t\Delta_D}f = -\Delta_D e^{-t\Delta_D}f$;
 4. Lastly, by setting the intial value function as $F(\cdot) = p(\cdot, x',s)$, it gives that
 <div>
 $$
-  p(x,x',t+s) = \int_{\R^d} p(x,x'',t)p(x'', x',s)\;dx''
-  \;\;\; t,s>0, x,x'\in\R^d.
+  p(x,x',t+s) = \int_{\Omega} p(x,x'',t)p(x'', x',s)\;dx''
+  \;\;\; t,s>0, x,x'\in\Omega.
 $$
 </div>
-The unique smooth function $p$ is called the fundamental solution to the heat equation in \eqref{Eq:heat}, also known as the heat kernel; and $e^{-t\Delta}:\calL^2(\R^d)\to \calL^2(\R^d)$ is called the heat propagator \eqref{Eq:propagator} [9]. Note that in this case the Green's function to \eqref{Eq:heat} is $p$ with initial value function $F$ as $\delta\_x$.
+The unique smooth function $p$ is called the fundamental solution to the heat equation in \eqref{Eq:heat}, also known as the heat kernel; and $e^{-t\Delta_D}:\calL^2(\Omega)\to \calL^2(\Omega)$ is called the heat propagator \eqref{Eq:propagator} [9]. Note that in this case the Green's function to \eqref{Eq:heat} is $p$ with initial value function $F$ as $\delta\_x$.
 
-In addition, it can be shown that the Integral operator  $e^{-t\Delta}$ is self-adjoint, compact and positive [9]. So $p$ is the reproducing kernel for $e^{-t\Delta}$. Indeed, from the spectral property of $e^{-t\Delta}$, we obtain the following expression
+In addition, it can be shown that the Integral operator  $e^{-t\Delta_D}$ is self-adjoint, compact and positive [9]. So $p$ is the reproducing kernel for $e^{-t\Delta_D}$. Indeed, from the spectral property of $\Delta_D$ and [holomorphic functional calculus](https://en.wikipedia.org/wiki/Holomorphic_functional_calculus), we obtain the following expression
 <div>
 $$
-  e^{-t\Delta} = \sum_i e^{-t\mu_i} \phi_i\otimes \phi_i
+  e^{-t\Delta_D} = \sum_i e^{-t\mu_i} \phi_i\otimes \phi_i
 $$
 </div>
-with $p(x,x',t) = \sum\_i e^{-t\mu\_i}\phi\_i(x) \phi\_i(x')$, for $\\{\mu\\}\_i$ the eigenvalues and $\\{\phi\_i\\}\_i$ the eigenfunctions of $\Delta$, which consequently forms the Sturm-Liouville decomposition of $\calL^2(\R^d)$. Complete proof can be found in [9].
+with $p(x,x',t) = \sum\_i e^{-t\mu\_i}\phi\_i(x) \phi\_i(x')$, for $\\{\mu\\}\_i$ the eigenvalues and $\\{\phi\_i\\}\_i$ the eigenfunctions of $\Delta$, which consequently forms the Sturm-Liouville decomposition of $\calL^2(\Omega)$. Complete proof can be found in [9].
 
 **Remark.**_In fact, the above result holds for any compact Riemannian manifold [9]._
 
@@ -172,22 +172,11 @@ $$
   G(x,y) = \sum_i \frac{1}{\lambda_i}\phi_i(x)\phi_i(y)\;\;\; x,y\in V
 $$
 </div>
-For heat equation, we are able to construct similar expression as in Section 1, where we denote
-<div>
-$$
-  \calH_t = e^{-t L_{norm}}
-$$
-</div>
-as the discrete version of Heat propagator, which is also the heat kernel satisfying
-
-1. $\partder{}{t}\calH\_t f = -L\_{norm} \calH\_t f$;
-2. $\lim\_{t\to 0} \calH\_t = 0$,
-
-analogous to the continuous case. For more detailed discussions on discrete differential system, [7] is a very good reference.
+ For more detailed discussions on discrete differential system, [7] is a very good reference.
 
 **Remark.** _We have seen in Part 3 that the compact self-adjoint positive operator $\calT$ is the infinite dimensional counterpart to the strictly positive definite Hermitian matrix $A$, which forms a valid RKHS. One intuitive way to see why it works is by considering the inner product defined by $\inner{v, w}\_A = \inner{Av, w}$ on $\R^d$ for $v, w\in \R^d$._
 
- It is also noted that, by the [holomorphic functional calculi](https://en.wikipedia.org/wiki/Holomorphic_functional_calculus), we are able to find the eigenvalues and eigenfunctions/vectors of $r(\Delta)$ or $r(L\_{norm})$, such that $r$ is a holomorphic function, e.g. polynomials and inverse functions (resolvent). Some kernels on graphs are constructed in this way, which can be found in [4].
+ It is also noted that, by the holomorphic functional calculus (or more generally the Borel one), we are able to find the eigenvalues and eigenfunctions/vectors of $r(\Delta)$ or $r(L\_{norm})$, such that $r$ is a holomorphic (Borel) function, e.g. polynomials and inverse functions (resolvent). [4] gives many kernels on graphs constructed in this way.
 
 <h2 class="section-heading">References</h2>
 
