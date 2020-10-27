@@ -7,6 +7,8 @@ author:     "edenx"
 tags: 		[kernel, Lapalcian, PDE]
 category:   math
 ---
+_There's actually something that I need to fix, so take those concepts with caution_
+<br/><br/>
 
 Before the main content, just for my interest in graphs and Laplace operators (which has nice properties and wide applications owing to its representation of second order information and its spectral properties), here's a blog ['Why Laplacian?'](https://donskerclass.github.io/post/why-laplacians/) written by Prof David Childers at CMU Economics on some applications of Laplacians and their interpretations in each context. One of the purpose of this article is to provide with another manifestation of Laplacian's usefulness in function smoothing, in terms of its use in regularisation and RKHS constructed by it.
 

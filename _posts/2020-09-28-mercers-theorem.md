@@ -8,8 +8,8 @@ tags: 		  [kernel, fundamentals of RKHS]
 category:   math
 ---
 
-_**Disclaimer.** This post is served as a summarisation of my study notes on RKHS theory [1], and classes I took on relevant topics, containing theoratical details from [1, 2, 3] along with my interpretations directed by my personal interests on those topics. I am by no means an expert in functional analysis and spectral theory, so please feel free to point out any mistakes in the post.
-<br/><br/>_
+_**Disclaimer.** This post is served as a summarisation of my study notes on RKHS theory [1], and classes I took on relevant topics, containing theoratical details from [1, 2, 3] along with my interpretations directed by my personal interests on those topics. I am by no means an expert in functional analysis and spectral theory, so please feel free to point out any mistakes in the post._
+<br/><br/>
 
 In this article, we assume that $\calX$ is a locally compact Hausdorff space equipped with a positive Borel measure $\mu$. Moreover, let $\calL^2(\calX, \mu)$ be the separable Hilbert space of real functions defined on $\calX$. We will mainly consider the spectral property of the integral operator for $k\in \calL^2(\calX\times\calX, \mu)$, which is defined as
 <div>
