@@ -15,7 +15,7 @@ In this article, we assume that $\calX$ is a locally compact Hausdorff space equ
 <div>
 $$
 \begin{align}
-  \calK (f)(t) = \int_{\calX} f(x)k(x,y)\;d\mu(x),\quad \calK: \calL^2(\calX) \to \calL^2(\calX),\label{Eq:HSIO}
+  \calK (f)(y) = \int_{\calX} f(x)k(x,y)\;d\mu(x),\quad \calK: \calL^2(\calX) \to \calL^2(\calX),\label{Eq:HSIO}
 \end{align}
 $$
 </div>
@@ -107,7 +107,7 @@ Finally, Theorem 6 says that for positive definite quadratic form (condition 2 i
 1. _$k(x,y) = k(y,x)\;\forall x,y\in\supp{\mu}$;_
 2. $\int\int\_{\calX\times\calX} k(x,y)f(x)f(y)\;d\mu(y) \geq 0, \;\forall f\in\calL^2(\calX, \mu).$
 
-_Then $\calK$ admits a set of positive eigenvalues and corresponding orthonomorl eigenfunctions, where $\calK = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, where the convergence is absolute and uniform on $\supp{\mu\times\mu}$._
+_Then $\calK$ admits a set of positive eigenvalues and corresponding orthonormal eigenfunctions, where $\calK = \sum\_{i}\lambda\_i (\phi\_i \otimes \phi\_i)$, where the convergence is absolute and uniform on $\supp{\mu\times\mu}$._
 
 Since condition 2 is equivalent to the definition of positive definite quadratic form, Mercer's theorem is generally applicable to all reproducing kernels in [Part 1](2020-09-22-construction-of-RKHS.md).
 
