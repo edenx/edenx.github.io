@@ -1,0 +1,4 @@
+---
+title: Blog
+view: showcase
+---
