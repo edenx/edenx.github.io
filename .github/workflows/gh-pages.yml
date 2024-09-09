@@ -2,7 +2,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - hugosite
 jobs:
   deploy:
     runs-on: ubuntu-latest
