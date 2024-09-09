@@ -3,22 +3,22 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - hugosite  # or specify your branch
+      - hugosite  # Adjust branch name as needed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-	
-      - name: Clean Hugo module cache
-        run: hugo mod clean
+      - uses: actions/checkout@v3  # Update to v3
 
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+
+      - name: Clean Hugo module cache
+        run: hugo mod clean
 
       - name: Build Hugo site
         run: hugo
@@ -27,4 +27,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_dir​
