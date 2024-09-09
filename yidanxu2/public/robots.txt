@@ -1,3 +1,0 @@
-User-agent: *
-
-Sitemap: https://edenx.github.io/sitemap.xml
