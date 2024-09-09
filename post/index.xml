@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog | Yidan Xu</title>
-    <link>http://localhost:1313/post/</link>
-      <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edenx.github.io/post/</link>
+      <atom:link href="https://edenx.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 27 Oct 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu14341516347436837864.png</url>
+      <url>https://edenx.github.io/media/icon_hu14341516347436837864.png</url>
       <title>Blog</title>
-      <link>http://localhost:1313/post/</link>
+      <link>https://edenx.github.io/post/</link>
     </image>
     
     <item>
       <title>🎉 Easily create your own simple yet highly customizable blog</title>
-      <link>http://localhost:1313/post/get-started/</link>
+      <link>https://edenx.github.io/post/get-started/</link>
       <pubDate>Fri, 27 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/get-started/</guid>
+      <guid>https://edenx.github.io/post/get-started/</guid>
       <description>&lt;p&gt;Welcome 👋&lt;/p&gt;
 
 
@@ -124,9 +124,9 @@
     
     <item>
       <title>🧠 Sharpen your thinking with a second brain</title>
-      <link>http://localhost:1313/post/second-brain/</link>
+      <link>https://edenx.github.io/post/second-brain/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/second-brain/</guid>
+      <guid>https://edenx.github.io/post/second-brain/</guid>
       <description>&lt;p&gt;Create a personal knowledge base and share your knowledge with your peers.&lt;/p&gt;
 &lt;p&gt;Hugo Blox web framework empowers you with one of the most flexible note-taking capabilities out there.&lt;/p&gt;
 &lt;p&gt;Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.&lt;/p&gt;
@@ -237,9 +237,9 @@
     
     <item>
       <title>👩🏼‍🏫 Teach academic courses</title>
-      <link>http://localhost:1313/post/teach-courses/</link>
+      <link>https://edenx.github.io/post/teach-courses/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/teach-courses/</guid>
+      <guid>https://edenx.github.io/post/teach-courses/</guid>
       <description>&lt;p&gt;
  is designed to give technical content creators a seamless experience. You can focus on the content and the Hugo Blox Builder which this template is built upon handles the rest.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Embed videos, podcasts, code, LaTeX math, and even test students!&lt;/strong&gt;&lt;/p&gt;
@@ -294,7 +294,7 @@
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;http://localhost:1313/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://edenx.github.io/post/teach-courses/ambient-piano.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 
 &lt;h2 id=&#34;test-students&#34;&gt;Test students&lt;/h2&gt;
@@ -353,9 +353,9 @@ data.head()
     
     <item>
       <title>✅ Manage your projects</title>
-      <link>http://localhost:1313/post/project-management/</link>
+      <link>https://edenx.github.io/post/project-management/</link>
       <pubDate>Mon, 23 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/project-management/</guid>
+      <guid>https://edenx.github.io/post/project-management/</guid>
       <description>&lt;p&gt;Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!&lt;/p&gt;
 &lt;h2 id=&#34;ideation&#34;&gt;Ideation&lt;/h2&gt;
 &lt;p&gt;Hugo Blox supports a Markdown extension for mindmaps.&lt;/p&gt;
@@ -428,9 +428,9 @@ Parallel 4   :         des6, after des4, 1d
     
     <item>
       <title>Gaussian Field and SPDE</title>
-      <link>http://localhost:1313/post/data-visualization/</link>
+      <link>https://edenx.github.io/post/data-visualization/</link>
       <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/data-visualization/</guid>
+      <guid>https://edenx.github.io/post/data-visualization/</guid>
       <description>&lt;p&gt;The motivation of reading on this topic, is closely connected to my interest in geometric data, in particular, learning functions for data supported on non-Euclidean domain, such as manifold and graphs. One of the reason being that a lot of practically important problems find data with some kind of underlying structure, which is probably more suitable to assume a locally Euclidean domain (e.g. a smooth manifold); and of course graph structured data is also ubiquitous and of great interest in many fields of study.&lt;/p&gt;
 &lt;h2 class=&#34;section-heading&#34;&gt;Motivations: SPDE approach in Spatial statistics and beyond&lt;/h2&gt;
 &lt;p&gt;For someone with a spatial statistics background, it is kind of natural to find Gaussian Process (GP) as the first step in function learning on manifold, with its connection to SPDE and RKHS. Specifically, it is in fact a well motivated problem, with the pioneering work by Whittle on the discovery of Matérn class of GP (which is used extensively in spatial statistics) being solutions to some SPDE driven by Gaussian white noise [1]. It has resurfaced as the &amp;lsquo;SPDE method&amp;rsquo; for kriging by Lindgren et al.[2] in the recent decades, and has been implemented in the r-INLA package, which is becoming increasingly popular in the applied studies with the element of spatial statistics, such as ecology, epidemiology, climate science etc. Particularly, their approach tackles the big $N$ problem by approximating GP with a Gaussian Markov Random Field (GMRF), which has a conditional independence structure resulting in a sparse Precision matrix for the finite-sample multivariant Gaussian distribution. The computational cost is dramatically reduced with such approximation, with typically $\calO(N^{3/2})$ for spatial domain and $\calO(N^2)$ in space and time. This is indeed a hard-to-beat solution to the big $N$ problem of GP on spatial and temporal domain, however, the FEM approach is rarely applied to high dimensional problem that is $d&gt;3$, which is of interests for some Machine Learning tasks, such as semi-supervised classification with image data.&lt;/p&gt;

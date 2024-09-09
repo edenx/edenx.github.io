@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PDE | Yidan Xu</title>
-    <link>http://localhost:1313/tags/pde/</link>
-      <atom:link href="http://localhost:1313/tags/pde/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edenx.github.io/tags/pde/</link>
+      <atom:link href="https://edenx.github.io/tags/pde/index.xml" rel="self" type="application/rss+xml" />
     <description>PDE</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 14 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:1313/media/icon_hu14341516347436837864.png</url>
+      <url>https://edenx.github.io/media/icon_hu14341516347436837864.png</url>
       <title>PDE</title>
-      <link>http://localhost:1313/tags/pde/</link>
+      <link>https://edenx.github.io/tags/pde/</link>
     </image>
     
     <item>
       <title>Gaussian Field and SPDE</title>
-      <link>http://localhost:1313/post/data-visualization/</link>
+      <link>https://edenx.github.io/post/data-visualization/</link>
       <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/data-visualization/</guid>
+      <guid>https://edenx.github.io/post/data-visualization/</guid>
       <description>&lt;p&gt;The motivation of reading on this topic, is closely connected to my interest in geometric data, in particular, learning functions for data supported on non-Euclidean domain, such as manifold and graphs. One of the reason being that a lot of practically important problems find data with some kind of underlying structure, which is probably more suitable to assume a locally Euclidean domain (e.g. a smooth manifold); and of course graph structured data is also ubiquitous and of great interest in many fields of study.&lt;/p&gt;
 &lt;h2 class=&#34;section-heading&#34;&gt;Motivations: SPDE approach in Spatial statistics and beyond&lt;/h2&gt;
 &lt;p&gt;For someone with a spatial statistics background, it is kind of natural to find Gaussian Process (GP) as the first step in function learning on manifold, with its connection to SPDE and RKHS. Specifically, it is in fact a well motivated problem, with the pioneering work by Whittle on the discovery of Matérn class of GP (which is used extensively in spatial statistics) being solutions to some SPDE driven by Gaussian white noise [1]. It has resurfaced as the &amp;lsquo;SPDE method&amp;rsquo; for kriging by Lindgren et al.[2] in the recent decades, and has been implemented in the r-INLA package, which is becoming increasingly popular in the applied studies with the element of spatial statistics, such as ecology, epidemiology, climate science etc. Particularly, their approach tackles the big $N$ problem by approximating GP with a Gaussian Markov Random Field (GMRF), which has a conditional independence structure resulting in a sparse Precision matrix for the finite-sample multivariant Gaussian distribution. The computational cost is dramatically reduced with such approximation, with typically $\calO(N^{3/2})$ for spatial domain and $\calO(N^2)$ in space and time. This is indeed a hard-to-beat solution to the big $N$ problem of GP on spatial and temporal domain, however, the FEM approach is rarely applied to high dimensional problem that is $d&gt;3$, which is of interests for some Machine Learning tasks, such as semi-supervised classification with image data.&lt;/p&gt;
