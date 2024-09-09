@@ -11,6 +11,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+	
+      - name: Clean Hugo module cache
+        run: hugo mod clean
 
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v2
