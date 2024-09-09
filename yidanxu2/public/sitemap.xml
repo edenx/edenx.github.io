@@ -2,232 +2,170 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:53965/event/example/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/event/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/authors/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/author/yidan-xu/</loc>
-    <lastmod>2030-06-01T13:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/projects/</loc>
+    <loc>https://edenx.github.io/projects/</loc>
     <lastmod>2024-05-19T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/post/get-started/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/academic/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/post/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/hugo-blox/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/markdown/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/author/ted/</loc>
-    <lastmod>2023-10-27T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/hugo/</loc>
+    <loc>https://edenx.github.io/tags/hugo/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/project/pandas/</loc>
+    <loc>https://edenx.github.io/tags/markdown/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/project/</loc>
+    <loc>https://edenx.github.io/project/pandas/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/project/pytorch/</loc>
+    <loc>https://edenx.github.io/project/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/project/scikit/</loc>
+    <loc>https://edenx.github.io/project/pytorch/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/second-brain/</loc>
+    <loc>https://edenx.github.io/project/scikit/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/wowchemy/</loc>
+    <loc>https://edenx.github.io/tags/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/post/second-brain/</loc>
+    <loc>https://edenx.github.io/tags/wowchemy/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/post/teach-courses/</loc>
+    <loc>https://edenx.github.io/experience/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/experience/</loc>
+    <loc>https://edenx.github.io/tags/javascript/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/hugo-blox-builder/</loc>
+    <loc>https://edenx.github.io/teaching/js/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/javascript/</loc>
+    <loc>https://edenx.github.io/teaching/python/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/teaching/js/</loc>
+    <loc>https://edenx.github.io/tags/python/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/teaching/python/</loc>
+    <loc>https://edenx.github.io/teaching/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/python/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/teaching/</loc>
-    <lastmod>2023-10-24T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/post/project-management/</loc>
-    <lastmod>2023-10-23T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/</loc>
+    <loc>https://edenx.github.io/</loc>
     <lastmod>2022-10-24T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/adam-howes/</loc>
+    <loc>https://edenx.github.io/author/adam-howes/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/bayesian-inference/</loc>
+    <loc>https://edenx.github.io/tags/bayesian-inference/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/elizaveta-semenova/</loc>
+    <loc>https://edenx.github.io/author/elizaveta-semenova/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/gaussian-process/</loc>
+    <loc>https://edenx.github.io/tags/gaussian-process/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/publication_types/journal/</loc>
+    <loc>https://edenx.github.io/publication_types/journal/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/publication/priorvae/</loc>
+    <loc>https://edenx.github.io/publication/priorvae/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/publication_types/</loc>
+    <loc>https://edenx.github.io/publication_types/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/publication/</loc>
+    <loc>https://edenx.github.io/publication/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/samir-bhatt/</loc>
+    <loc>https://edenx.github.io/author/samir-bhatt/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/seth-flaxman/</loc>
+    <loc>https://edenx.github.io/author/seth-flaxman/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/swapnil-mishra/</loc>
+    <loc>https://edenx.github.io/author/swapnil-mishra/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/theo-rashid/</loc>
+    <loc>https://edenx.github.io/author/theo-rashid/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/variational-autoencoders/</loc>
+    <loc>https://edenx.github.io/tags/variational-autoencoders/</loc>
     <lastmod>2022-06-08T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/carl-yang/</loc>
+    <loc>https://edenx.github.io/authors/</loc>
+    <lastmod>2022-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edenx.github.io/author/yidan-xu/</loc>
+    <lastmod>2022-06-08T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://edenx.github.io/author/carl-yang/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/chao-zhang/</loc>
+    <loc>https://edenx.github.io/author/chao-zhang/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/graph-neural-networks/</loc>
+    <loc>https://edenx.github.io/tags/graph-neural-networks/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/haonan-wang/</loc>
+    <loc>https://edenx.github.io/author/haonan-wang/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/jiawei-han/</loc>
+    <loc>https://edenx.github.io/author/jiawei-han/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/publication_types/paper-conference/</loc>
+    <loc>https://edenx.github.io/publication_types/paper-conference/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/author/qi-zhu/</loc>
+    <loc>https://edenx.github.io/author/qi-zhu/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/transfer-learning/</loc>
+    <loc>https://edenx.github.io/tags/transfer-learning/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/publication/gnntransfer/</loc>
+    <loc>https://edenx.github.io/publication/gnntransfer/</loc>
     <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/post/data-visualization/</loc>
-    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+    <loc>https://edenx.github.io/post/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:53965/tags/gp/</loc>
-    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/kernel/</loc>
-    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/lapalcian/</loc>
-    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:53965/tags/pde/</loc>
-    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+    <loc>https://edenx.github.io/event/</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

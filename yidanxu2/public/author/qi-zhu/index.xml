@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Qi Zhu | Yidan Xu</title>
-    <link>http://localhost:53965/author/qi-zhu/</link>
-      <atom:link href="http://localhost:53965/author/qi-zhu/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edenx.github.io/author/qi-zhu/</link>
+      <atom:link href="https://edenx.github.io/author/qi-zhu/index.xml" rel="self" type="application/rss+xml" />
     <description>Qi Zhu</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:53965/media/icon_hu14341516347436837864.png</url>
+      <url>https://edenx.github.io/media/icon_hu14341516347436837864.png</url>
       <title>Qi Zhu</title>
-      <link>http://localhost:53965/author/qi-zhu/</link>
+      <link>https://edenx.github.io/author/qi-zhu/</link>
     </image>
     
     <item>
       <title>Transfer Learning of Graph Neural Networks with Ego-graph Information Maximization</title>
-      <link>http://localhost:53965/publication/gnntransfer/</link>
+      <link>https://edenx.github.io/publication/gnntransfer/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53965/publication/gnntransfer/</guid>
+      <guid>https://edenx.github.io/publication/gnntransfer/</guid>
       <description>&lt;!-- 
 
 

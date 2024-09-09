@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Adam Howes | Yidan Xu</title>
-    <link>http://localhost:53965/author/adam-howes/</link>
-      <atom:link href="http://localhost:53965/author/adam-howes/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edenx.github.io/author/adam-howes/</link>
+      <atom:link href="https://edenx.github.io/author/adam-howes/index.xml" rel="self" type="application/rss+xml" />
     <description>Adam Howes</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:53965/media/icon_hu14341516347436837864.png</url>
+      <url>https://edenx.github.io/media/icon_hu14341516347436837864.png</url>
       <title>Adam Howes</title>
-      <link>http://localhost:53965/author/adam-howes/</link>
+      <link>https://edenx.github.io/author/adam-howes/</link>
     </image>
     
     <item>
       <title>PriorVAE: encoding spatial priors with variational autoencoders for small-area estimation</title>
-      <link>http://localhost:53965/publication/priorvae/</link>
+      <link>https://edenx.github.io/publication/priorvae/</link>
       <pubDate>Wed, 08 Jun 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:53965/publication/priorvae/</guid>
+      <guid>https://edenx.github.io/publication/priorvae/</guid>
       <description>&lt;!-- 
 
 

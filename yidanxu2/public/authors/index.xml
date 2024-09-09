@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Yidan Xu</title>
-    <link>http://localhost:53965/authors/</link>
-      <atom:link href="http://localhost:53965/authors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://edenx.github.io/authors/</link>
+      <atom:link href="https://edenx.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Yidan Xu</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 08 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:53965/media/icon_hu14341516347436837864.png</url>
+      <url>https://edenx.github.io/media/icon_hu14341516347436837864.png</url>
       <title>Yidan Xu</title>
-      <link>http://localhost:53965/authors/</link>
+      <link>https://edenx.github.io/authors/</link>
     </image>
     
   </channel>
