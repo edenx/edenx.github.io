@@ -12,8 +12,14 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
+	  extended: true
+
+      - name: Clean Hugo Module Cache
+	run: hugo mod clean
+
       - name: Build Hugo site
         run: hugo
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
