@@ -14,7 +14,7 @@ jobs:
           hugo-version: 'latest'
           extended: true  # Proper indentation here
       - name: Build Hugo site
-        run: hugo
+        run: hugo -source ./config/_default
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
