@@ -13,7 +13,7 @@ jobs:
         with:
           hugo-version: 'latest'
       - name: Build Hugo site
-        run: hugo -- source ./yidanxu2
+        run: hugo -- source ./yidanxu2/config/_default
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
