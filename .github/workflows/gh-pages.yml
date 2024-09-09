@@ -13,9 +13,9 @@ jobs:
         with:
           hugo-version: 'latest'
       - name: Build Hugo site
-        run: hugo -- source ./yidanxu2/config/_default
+        run: hugo
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./yidanxu2/public
+          publish_dir: ./public
